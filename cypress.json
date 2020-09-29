@@ -1,7 +1,7 @@
 {
   "animationDistanceThreshold": 5,
   "blockHosts": null,
-  "baseUrl": "https://kingtests-bug",
+  "baseUrl": "https://rahulshettyacademy.com",
   "browsers": [
       {
           "channel": "stable",
@@ -43,7 +43,7 @@
   "fixturesFolder": "cypress/fixtures",
   "hosts": null,
   "ignoreTestFiles": "*.hot-update.js",
-  "integrationFolder": "cypress/tests",
+  "integrationFolder": "cypress/integration",
   "modifyObstructiveCode": true,
   "nodeVersion": "system",
   "numTestsKeptInMemory": 50,
