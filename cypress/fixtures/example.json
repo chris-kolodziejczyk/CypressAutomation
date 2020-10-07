@@ -1,5 +1,6 @@
 {
- "name" :"bob",
- "gender":"Female",
- "productName": ["Blackberry","Nokia Edge"]
+ "login" :"administrator@testarena.pl",
+ "pass":"sumXQQ72$L",
+ "footerItemsText": ["Kokpit", "Regulamin", "Dokumentacja", "Kontakt"],
+ "footerLanguage": ["english", "polski"]
 }
