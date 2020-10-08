@@ -1,21 +1,62 @@
 
+// NOTE: Wyjątki:
 
-// let promise1 = new Promise(function (resolve, reject) {
+// class Animal {
+//   constructor(name, age) {
+//     this.name = name
+//     this.age = age
+//   }
+
+//   speak() {
+//     console.log(this.name + ' makes a noise.')
+//   }
+// }
+
+// class Dog extends Animal {
+//   constructor(myDogName, myDogAge) {
+//     super(myDogName,myDogAge)
+//   }
+//   myDogSpeak() {
+  
+//     try {
+//       speak()
+//       console.log(this.name + ' age: ' + this.age)
+//     } catch (ex) {
+//       console.log('Error: ' + this.speak())
+//       console.log(ex)
+//     }
+//   }
+// }
+
+// let dog = new Dog()
+
+// dog.myDogSpeak()
+
+
+// let examplePromise = new Promise(function (resolve, reject) {
 //     setTimeout(function () {
 //         resolve('foo')
 //     }, 300)
 // })
 
-// promise1.then((value) => {
+// examplePromise.then((value) => {
 //     console.log(value)
+
+//     return value
 //     // expected output: "foo"
+// }).then((newValue) => {
+
+//   console.log(newValue)
+//   newValue = 1
+
+//   console.log(newValue)
 // })
 
-// console.log(promise1)
-// // expected output: [object Promise]
+// console.log(examplePromise)
+// expected output: [object Promise]
 
 
-// // NOTE: Obsługa błędów
+// NOTE: Obsługa błędów
 
 // let promise2 = new Promise((resolve, reject) => {
 //     setTimeout(function () {
@@ -30,38 +71,4 @@
 // }).catch(err => console.log(err))
 
 // console.log(promise1)
-//   // expected output: [object Promise]
-
-
-// NOTE: Wyjątki:
-
-class Animal {
-  constructor(name, age) {
-    this.name = name
-    this.age = age
-  }
-
-  speak() {
-    console.log(this.name + ' makes a noise.')
-  }
-}
-
-class Dog extends Animal {
-  constructor(myDogName, myDogAge) {
-    super(myDogName,myDogAge)
-  }
-  myDogSpeak() {
-  
-    try {
-      speak()
-      console.log(this.name + ' age: ' + this.age)
-    } catch (ex) {
-      console.log('Error: ' + this.speak())
-      console.log(ex)
-    }
-  }
-}
-
-let dog = new Dog()
-
-dog.myDogSpeak()
+  // expected output: [object Promise]
