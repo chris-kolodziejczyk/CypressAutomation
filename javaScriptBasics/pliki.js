@@ -119,5 +119,5 @@ class DocumentClass {
 
 let doc = new DocumentClass()
 
-console.log(doc.readFile('../lib/przykładowyPlik.txt').length)
+console.log(doc.readFile('./lib/przykładowyPlik.txt'))
 
