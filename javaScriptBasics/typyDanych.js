@@ -97,7 +97,7 @@ isNaN(1 + undefined) // true
 
 // for (let key in user) console.log(key)
 
-// console.log("Direct: " + Object.values(user))
+// console.log("Direct: " + user[Object.getOwnPropertySymbols(user)[0]])
 
 
 // NOTE: String

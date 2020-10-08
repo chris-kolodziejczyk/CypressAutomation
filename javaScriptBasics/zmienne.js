@@ -44,6 +44,8 @@ const names = { nameOne:'Krzysztof' } // Object
 //     }
 //     console.log(x);  // 2
 //   }
+
+//   varTest()
   
 //   function letTest() {
 //     let x = 1;
@@ -53,6 +55,8 @@ const names = { nameOne:'Krzysztof' } // Object
 //     }
 //     console.log(x);  // 1
 //   }
+
+// letTest()
 
 // NOTE: Funkcyjny
 
@@ -64,7 +68,7 @@ const names = { nameOne:'Krzysztof' } // Object
 
 //     if (letter.length) {
 //         console.log(letter) // zwraca A
-//         var letter = 'B' // NOTE: Przykład 2 - zmienić na let
+//         var letter = 'B' // NOTE: Przykład 2 - zmienić na let (Przykład braku inicjalizacji)
 //         console.log(letter) // zwraca B
 //     }
 
@@ -89,7 +93,7 @@ const names = { nameOne:'Krzysztof' } // Object
 //         var letter = 'B'
         
 //         console.log(letter)
-//         var letter = 'A' // NOTE: Przykład 2 - Zamienić na let
+//         var letter = 'A' // NOTE: Przykład 2 - Zamienić na let (Przykład ponownej inicjalizacji tej samej zmiennej)
 //         console.log(letter)
 //     }
 

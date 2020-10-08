@@ -244,10 +244,10 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 // console.log(something[foo])
 
 // **************************************************************************
-// const obj = JSON.parse('{ "name":"John", "age":30, "city":"New York"}')
+const obj = JSON.parse('{ "name":"John", "age":30, "city":"New York"}')
 
-// console.log(obj.name)
-// console.log(obj.age)
+console.log(obj.name)
+console.log(obj.age)
 
 // **************************************************************************
 // let foo = {
