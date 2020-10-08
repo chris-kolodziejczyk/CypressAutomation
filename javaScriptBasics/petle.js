@@ -95,6 +95,6 @@
 // for (var i = 0; i <= arr.length; i++) {
 
 //     if (arr[i] === 42)
-//         continue  // break    
+//   //    continue  //    break    
 //     console.log('Iteracja')
 // }
