@@ -20,9 +20,9 @@ let osoby = ['Jan Kowalski', 'Adam Nowak', 'Maria Z', 'Janusz G', 'Marcin J']
 // METODA: unshift(elem1, elemN) / shift()
 
 // osoby.unshift(1,2)
-// console.log(osoby)
-// delete osoby[0]
-// console.log(osoby)
+// console.log(osoby.length)
+// osoby.shift() // Możliwe użycie: delete osoby[0]
+// console.log(osoby.length)
 
 // METODA: concat(elem1, elemN)
 
@@ -39,7 +39,7 @@ let osoby = ['Jan Kowalski', 'Adam Nowak', 'Maria Z', 'Janusz G', 'Marcin J']
 // METODA: forEach(callback)
 // osoby.forEach((value, index, arr) => {
 
-// console.log(arr)
+// console.log(value)
 // })
 
 // METODA: map(callback)
@@ -244,10 +244,10 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 // console.log(something[foo])
 
 // **************************************************************************
-const obj = JSON.parse('{ "name":"John", "age":30, "city":"New York"}')
+// const obj = JSON.parse('{ "name":"John", "age":30, "city":"New York"}')
 
-console.log(obj.name)
-console.log(obj.age)
+// console.log(obj.name)
+// console.log(obj.age)
 
 // **************************************************************************
 // let foo = {
