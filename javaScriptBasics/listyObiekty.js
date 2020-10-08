@@ -165,6 +165,7 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 // METODA: slice(begin, end)
 
 // console.log(osoby.slice(1,2))
+// console.log(osoby)
 
 // **************************************************************************
 // METODA: splice(begin, n)
