@@ -61,4 +61,4 @@ console.log("Numer wynosi " + (memberNumber === 2 ? "$2.00" : "$10.00"))
 // console.log("Numer wynosi " + (memberNumber === 2 ? "$2.00" : "$10.00"))
 
 // let a = 2 
-// console.log(a -= 3)
+// console.log(a *= 3)

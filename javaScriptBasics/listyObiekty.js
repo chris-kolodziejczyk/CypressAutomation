@@ -265,4 +265,3 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 // console.log(bar)
 // console.log(baz)
 // console.log(customName)
-
