@@ -15,7 +15,7 @@ class Prostokat {
 // NOTE: Dziedziczenie
 
 // class Animal {
-//   constructor(name, age) {
+//   constructor(name = "Loki", age = 400) {
 //     this.name = name
 //     this.age = age
 //   }
@@ -34,7 +34,7 @@ class Prostokat {
 //   }
 // }
 
-// let dog = new Dog('Rufus',15)
+// let dog = new Dog('Rufus', 15)
 
 // dog.speak()
 
