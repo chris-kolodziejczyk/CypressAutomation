@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-describe('Cypress.io tests', function () {
-  it.only('Open cypress.io page', function () {
+describe('Demo TestArena Tests', function () {
+  it.only('Demo login test', function () {
     let testArenaDemoPage = 'http://demo.testarena.pl/zaloguj';
     cy.visit(testArenaDemoPage);
     cy.url().should('include', 'demo.testarena');
