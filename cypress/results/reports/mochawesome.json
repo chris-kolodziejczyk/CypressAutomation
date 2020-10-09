@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 1,
+    "suites": 2,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2020-10-09T10:43:36.615Z",
-    "end": "2020-10-09T10:43:46.400Z",
-    "duration": 9785,
+    "failures": 0,
+    "start": "2020-10-09T14:28:01.067Z",
+    "end": "2020-10-09T14:28:02.097Z",
+    "duration": 1030,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,53 +18,68 @@
   },
   "results": [
     {
-      "uuid": "33ad1b88-dcc8-4fcc-a9ac-5e653466b32e",
+      "uuid": "f90ab1e7-7d81-43fa-91f3-acf547d59ab0",
       "title": "",
-      "fullFile": "cypress\\integration\\demoTests\\demoTest.js",
-      "file": "cypress\\integration\\demoTests\\demoTest.js",
+      "fullFile": "cypress\\integration\\demoTests\\demoApiTests.js",
+      "file": "cypress\\integration\\demoTests\\demoApiTests.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "69d226f6-5a91-4e14-b3a3-159345117bb1",
-          "title": "Cypress.io tests",
+          "uuid": "f21d2d5e-970c-441a-b50d-af97dab940e8",
+          "title": "Login page cookies test",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
-          "tests": [
+          "tests": [],
+          "suites": [
             {
-              "title": "Open cypress.io page",
-              "fullTitle": "Cypress.io tests Open cypress.io page",
-              "timedOut": null,
-              "duration": 7446,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": null,
-              "code": "var cypressPage = 'https://www.cypress.io/';\ncy.visit(cypressPage);\ncy.url().should('include', cypressPage);\ncy.get('[href=\"/features\"]');\ncy.get('[aria-label=\"see-more-features\"]');\ncy.contains('See more features').click();\ncy.url().should('include', '/features');\ncy.contains('A test runner built for humans');\ncy.contains('An open source, front-end testing tool, built for the modern web.');\ncy.get('input[type=\"email\"]').type('moj@email.com').should('have.value', 'moj@emial.com');",
-              "err": {
-                "message": "AssertionError: Timed out retrying: Expected to find element: `[aria-label=\"see-more-features\"]`, but never found it.",
-                "estack": "AssertionError: Timed out retrying: Expected to find element: `[aria-label=\"see-more-features\"]`, but never found it.\n    at Context.eval (https://www.cypress.io/__cypress/tests?p=cypress\\integration\\demoTests\\demoTest.js:105:8)",
-                "diff": null
-              },
-              "uuid": "4ced3c3c-0c5a-49fe-93bb-c79ef25f39b3",
-              "parentUUID": "69d226f6-5a91-4e14-b3a3-159345117bb1",
-              "isHook": false,
-              "skipped": false
+              "uuid": "98ff3f31-ce7c-4c6a-8f1a-6443fe829dd6",
+              "title": "Login page cookies test",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "When accept Cookies Then checkCookiesNotVisible Should check if cookies warning is not visible",
+                  "fullTitle": "Login page cookies test Login page cookies test When accept Cookies Then checkCookiesNotVisible Should check if cookies warning is not visible",
+                  "timedOut": null,
+                  "duration": 966,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.fixture('example').then(function (obj) {\n  cy.request({\n    url: obj.apiEndpoint,\n    method: 'GET',\n    headers: {},\n    body: {},\n    redirect: true\n  }).then(function (res) {\n    if (expect(res.status).to.be.equal(200)) {\n      console.log(res.body);\n    }\n  });\n});",
+                  "err": {},
+                  "uuid": "41387022-5e17-4aa0-9949-ee27199db1ac",
+                  "parentUUID": "98ff3f31-ce7c-4c6a-8f1a-6443fe829dd6",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "41387022-5e17-4aa0-9949-ee27199db1ac"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 966,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
             }
           ],
-          "suites": [],
           "passes": [],
-          "failures": [
-            "4ced3c3c-0c5a-49fe-93bb-c79ef25f39b3"
-          ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7446,
+          "duration": 0,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

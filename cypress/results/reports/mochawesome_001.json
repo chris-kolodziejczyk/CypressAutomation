@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 2,
+    "suites": 1,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2020-10-09T10:43:49.109Z",
-    "end": "2020-10-09T10:43:49.799Z",
-    "duration": 690,
+    "failures": 0,
+    "start": "2020-10-09T14:28:09.997Z",
+    "end": "2020-10-09T14:28:14.341Z",
+    "duration": 4344,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,72 +18,49 @@
   },
   "results": [
     {
-      "uuid": "6ec4d0f2-d651-4c2d-a827-649acbe0d209",
+      "uuid": "4e4e2f7c-cdcb-41b9-aaa9-904a193e8a38",
       "title": "",
-      "fullFile": "cypress\\integration\\demoTests\\loginPageTests.js",
-      "file": "cypress\\integration\\demoTests\\loginPageTests.js",
+      "fullFile": "cypress\\integration\\demoTests\\demoTest.js",
+      "file": "cypress\\integration\\demoTests\\demoTest.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "e81ca3e8-eca9-49d8-bdf3-a54cb78cc5e5",
-          "title": "Login page cookies test",
+          "uuid": "a84dc694-aff7-4da5-99c4-ca0fd126f772",
+          "title": "Cypress.io tests",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
-          "tests": [],
-          "suites": [
+          "tests": [
             {
-              "uuid": "3f070fb4-3a82-42ac-bbec-dbe6694f28d5",
-              "title": "Login page cookies test",
-              "fullFile": "",
-              "file": "",
-              "beforeHooks": [],
-              "afterHooks": [],
-              "tests": [
-                {
-                  "title": "When accept Cookies Then checkCookiesNotVisible Should check if cookies warning is not visible",
-                  "fullTitle": "Login page cookies test Login page cookies test When accept Cookies Then checkCookiesNotVisible Should check if cookies warning is not visible",
-                  "timedOut": null,
-                  "duration": 446,
-                  "state": "failed",
-                  "speed": null,
-                  "pass": false,
-                  "fail": true,
-                  "pending": false,
-                  "context": null,
-                  "code": "",
-                  "err": {
-                    "message": "ReferenceError: loginPage is not defined\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Login page cookies test`",
-                    "estack": "ReferenceError: loginPage is not defined\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Login page cookies test`\n    at Context.eval (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\integration\\demoTests\\loginPageTests.js:102:5)",
-                    "diff": null
-                  },
-                  "uuid": "0fbd0d78-88bb-4cc4-8d50-afdd9fc5db43",
-                  "parentUUID": "3f070fb4-3a82-42ac-bbec-dbe6694f28d5",
-                  "isHook": false,
-                  "skipped": false
-                }
-              ],
-              "suites": [],
-              "passes": [],
-              "failures": [
-                "0fbd0d78-88bb-4cc4-8d50-afdd9fc5db43"
-              ],
-              "pending": [],
-              "skipped": [],
-              "duration": 446,
-              "root": false,
-              "rootEmpty": false,
-              "_timeout": 2000
+              "title": "Open cypress.io page",
+              "fullTitle": "Cypress.io tests Open cypress.io page",
+              "timedOut": null,
+              "duration": 4238,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var testArenaDemoPage = 'http://demo.testarena.pl/zaloguj';\ncy.visit(testArenaDemoPage);\ncy.url().should('include', 'demo.testarena');\ncy.get('#email').type('administrator@testarena.pl');\ncy.get('#password').type('sumXQQ72$L');\ncy.contains('Zaloguj').click();\ncy.url().should('include', 'http://demo.testarena.pl'); // cy.url().then((url) => {\n//   assert.strictEqual(url, 'http://demo.testarena.pl/');\n//   expect(url).to.equal('http://demo.testarena.pl/');\n// });",
+              "err": {},
+              "uuid": "9a90d4bb-7546-4b17-9cac-96e1f5a2c131",
+              "parentUUID": "a84dc694-aff7-4da5-99c4-ca0fd126f772",
+              "isHook": false,
+              "skipped": false
             }
           ],
-          "passes": [],
+          "suites": [],
+          "passes": [
+            "9a90d4bb-7546-4b17-9cac-96e1f5a2c131"
+          ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 0,
+          "duration": 4238,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

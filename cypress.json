@@ -50,13 +50,13 @@
   "pageLoadTimeout": 60000,
   "pluginsFile": "cypress/plugins",
   "port": null,
-  "projectId": "eympv4",
+  "projectId": "null",
   "reporter": "mochawesome",
   "reporterOptions": {
-    "reportDir": "cypress/results/reports",
-    "overwrite": false,
-    "html": true,
-    "json": true
+      "reportDir": "cypress/results/reports",
+      "overwrite": false,
+      "html": true,
+      "json": true
   },
   "requestTimeout": 5000,
   "responseTimeout": 30000,

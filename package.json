@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cyopen": "cypress open",
-    "cyrun": "cypress run --record --key b39acf4e-19b1-4a17-ae55-9962aff95d30"
+    "cyrun": "cypress run"
   },
   "author": "Krzysztof Kolodziejczyk",
   "license": "MIT",

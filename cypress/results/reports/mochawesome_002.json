@@ -1,13 +1,13 @@
 {
   "stats": {
-    "suites": 1,
+    "suites": 2,
     "tests": 1,
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2020-10-09T10:48:17.365Z",
-    "end": "2020-10-09T10:48:27.032Z",
-    "duration": 9667,
+    "start": "2020-10-09T14:28:22.319Z",
+    "end": "2020-10-09T14:28:23.052Z",
+    "duration": 733,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,53 +18,72 @@
   },
   "results": [
     {
-      "uuid": "2b86dfbb-0965-45e8-aaaf-99e7661f25cf",
+      "uuid": "6b80d4cd-6fd3-4072-a5bd-c6750be5c5b3",
       "title": "",
-      "fullFile": "cypress\\integration\\demoTests\\demoTest.js",
-      "file": "cypress\\integration\\demoTests\\demoTest.js",
+      "fullFile": "cypress\\integration\\demoTests\\loginPageTests.js",
+      "file": "cypress\\integration\\demoTests\\loginPageTests.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "1ea5b4bb-f33b-4a53-9970-38509e5aca4e",
-          "title": "Cypress.io tests",
+          "uuid": "82cac873-5f99-4c39-b65b-70afc3033811",
+          "title": "Login page cookies test",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
-          "tests": [
+          "tests": [],
+          "suites": [
             {
-              "title": "Open cypress.io page",
-              "fullTitle": "Cypress.io tests Open cypress.io page",
-              "timedOut": null,
-              "duration": 7353,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": null,
-              "code": "var cypressPage = 'https://www.cypress.io/';\ncy.visit(cypressPage);\ncy.url().should('include', cypressPage);\ncy.get('[href=\"/features\"]');\ncy.get('[aria-label=\"see-more-features\"]');\ncy.contains('See more features').click();\ncy.url().should('include', '/features');\ncy.contains('A test runner built for humans');\ncy.contains('An open source, front-end testing tool, built for the modern web.');\ncy.get('input[type=\"email\"]').type('moj@email.com').should('have.value', 'moj@emial.com');",
-              "err": {
-                "message": "AssertionError: Timed out retrying: Expected to find element: `[aria-label=\"see-more-features\"]`, but never found it.",
-                "estack": "AssertionError: Timed out retrying: Expected to find element: `[aria-label=\"see-more-features\"]`, but never found it.\n    at Context.eval (https://www.cypress.io/__cypress/tests?p=cypress\\integration\\demoTests\\demoTest.js:105:8)",
-                "diff": null
-              },
-              "uuid": "4cec8eed-374b-44e5-8828-0b1fe0f16a52",
-              "parentUUID": "1ea5b4bb-f33b-4a53-9970-38509e5aca4e",
-              "isHook": false,
-              "skipped": false
+              "uuid": "c30922c8-3fc3-41d6-ba94-c21d1312586e",
+              "title": "Login page cookies test",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "When accept Cookies Then checkCookiesNotVisible Should check if cookies warning is not visible",
+                  "fullTitle": "Login page cookies test Login page cookies test When accept Cookies Then checkCookiesNotVisible Should check if cookies warning is not visible",
+                  "timedOut": null,
+                  "duration": 374,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "",
+                  "err": {
+                    "message": "ReferenceError: loginPage is not defined\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Login page cookies test`",
+                    "estack": "ReferenceError: loginPage is not defined\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Login page cookies test`\n./cypress/integration/demoTests/loginPageTests.js/</<@http://demo.testarena.pl/__cypress/tests?p=cypress\\integration\\demoTests\\loginPageTests.js:102:5\nsetRunnable/runnable.fn@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:169937:45\ncallFn@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:104304:21\n../driver/node_modules/mocha/lib/runnable.js/</Runnable.prototype.run@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:104291:13\nonRunnableRun/<@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:175515:28\nfinallyHandler@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:6879:23\ntryCatcher@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:10325:23\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8260:31\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8317:18\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8362:10\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8442:18\n_drainQueueStep@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:5032:12\n_drainQueue@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:5025:24\n../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:5041:16\nAsync/this.drainQueues@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:4911:14\npromise callback*schedule@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:9510:23\n../../node_modules/bluebird/js/release/async.js/</Async.prototype._queueTick@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:5050:14\nAsyncInvoke@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:4977:10\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._then@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8009:15\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype.then@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:7873:17\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype.catch@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:7854:17\nonRunnableRun@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:175486:48\naction@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:166073:28\npatchRunnableRun/Runnable.prototype.run@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:173900:13\nnext@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:104806:10\n../driver/node_modules/mocha/lib/runner.js/</Runner.prototype.hook/<@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:104850:9\ntimeslice@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:98776:27\nsetTimeout handler*../driver/node_modules/mocha/browser-entry.js/</Mocha.Runner.immediately@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:98792:24\n../driver/node_modules/mocha/lib/runner.js/</Runner.prototype.hook@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:104849:10\nmonkeypatchBefore/<@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:177345:21\nnext@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:104875:10\nnext/<@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:104882:11\nnext@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:104784:14\nnext/<@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:104845:11\nnext@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:175436:22\nonNext/<@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:175458:15\ntryCatcher@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:10325:23\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8260:31\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8317:18\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8362:10\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8442:18\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._fulfill@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8386:18\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._resolveCallback@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8180:57\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8272:17\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8317:18\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8362:10\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8442:18\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._fulfill@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8386:18\n../../node_modules/bluebird/js/release/promise_array.js/module.exports/PromiseArray.prototype._resolve@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8659:19\n../../node_modules/bluebird/js/release/promise_array.js/module.exports/PromiseArray.prototype._promiseFulfilled@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8677:14\n../../node_modules/bluebird/js/release/promise_array.js/module.exports/PromiseArray.prototype._iterate@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8647:31\ninit@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8611:10\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8314:21\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8362:10\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8442:18\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._fulfill@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8386:18\n../../node_modules/bluebird/js/release/promise_array.js/module.exports/PromiseArray.prototype._resolve@http://demo.testarena.pl/__cypress/runner/cypress_runner.js:8659:19\n",
+                    "diff": null
+                  },
+                  "uuid": "3d29b2da-c5a8-4763-b125-5f347342cf10",
+                  "parentUUID": "c30922c8-3fc3-41d6-ba94-c21d1312586e",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "3d29b2da-c5a8-4763-b125-5f347342cf10"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 374,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
             }
           ],
-          "suites": [],
           "passes": [],
-          "failures": [
-            "4cec8eed-374b-44e5-8828-0b1fe0f16a52"
-          ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7353,
+          "duration": 0,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
