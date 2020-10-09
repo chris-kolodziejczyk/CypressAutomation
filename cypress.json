@@ -73,5 +73,5 @@
   "viewportHeight": 600,
   "viewportWidth": 800,
   "waitForAnimations": true,
-  "watchForFileChanges": false
+  "watchForFileChanges": true
 }
