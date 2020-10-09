@@ -1,17 +1,20 @@
 /// <reference types="cypress" />
 
+describe('Cypress.io tests', function () {
+  it.only('Open cypress.io page', function () {
+    var testArenaDemoPage = 'http://demo.testarena.pl/zaloguj';
+    cy.visit(testArenaDemoPage);
+    cy.url().should('include', 'demo.testarena');
+    cy.get('#email').type('administrator@testarena.pl');
+    cy.get('#password').type('sumXQQ72$L');
+    cy.contains('Zaloguj').click();
 
-describe('Cypress.io tests', function() {
-	it.only('Open cypress.io page', function() {
-	  var cypressPage = 'https://www.cypress.io/'
-	  cy.visit(cypressPage)
-	  cy.url().should('include', cypressPage);
-	  cy.get('[href="/features"]');
-	  cy.get('[aria-label="see-more-features"]');
-	  cy.contains('See more features').click();
-	  cy.url().should('include', '/features');
-	  cy.contains('A test runner built for humans')
-	  cy.contains('An open source, front-end testing tool, built for the modern web.')
-	  cy.get('input[type="email"]').type('moj@email.com').should('have.value','moj@emial.com')
-	})
-  })
+	cy.url().should('include', 'http://demo.testarena.pl');
+	
+    // cy.url().then((url) => {
+    //   assert.strictEqual(url, 'http://demo.testarena.pl/');
+
+	//   expect(url).to.equal('http://demo.testarena.pl/');
+	// });
+  });
+});

@@ -1,4 +1,10 @@
-Cypress.Commands.add('logCypress', (filePath, encoding) => {
+Cypress.Commands.add('readDataFromFile', (filePath, encoding) => {
 
-    console.log('Cypress.IO')
+	cy.readFile(filePath, encoding).then((txt) => {
+
+		console.log(txt)
+	})
+
+		 
+
 });

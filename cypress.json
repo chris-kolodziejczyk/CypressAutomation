@@ -1,7 +1,7 @@
 {
   "animationDistanceThreshold": 5,
   "blockHosts": null,
-  "baseUrl": "https://rahulshettyacademy.com",
+  "baseUrl": "http://demo.testarena.pl/zaloguj",
   "browsers": [
     {
       "channel": "stable",
@@ -70,8 +70,8 @@
   "videoCompression": 32,
   "videoUploadOnPasses": true,
   "videosFolder": "cypress/videos",
-  "viewportHeight": 600,
-  "viewportWidth": 800,
+  "viewportHeight": 768,
+  "viewportWidth": 1366,
   "waitForAnimations": true,
   "watchForFileChanges": true
 }
