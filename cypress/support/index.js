@@ -16,6 +16,7 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 require('cypress-failed-log');
+import './commands/readFile.js'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

@@ -1,107 +1,133 @@
-cy.visit(url)
-cy.visit(url, options)
-cy.visit(options)
+// Instalacja dependencji
+// npm i <nazwa biblioteki>
+// lub
+// npm install  <dla wszystkich podanych w pliku package.json>
 
 
 
-cy.get(selector)
-cy.get(alias)
-cy.get(selector, options)
-cy.get(alias, options)
-
-
-.eq(index)
-.eq(indexFromEnd)
-.eq(index, options)
-.eq(indexFromEnd, options)
+// Uruchomienie pliku
+// node <nazwa pliku>
 
 
 
-.click()
-.click(options)
-.click(position)
-.click(position, options)
-.click(x, y)
-.click(x, y, options)
-
-
-.contains(content)
-.contains(content, options)
-.contains(selector, content)
-.contains(selector, content, options)
+// Uruchomienie skryptu
+// npm run <nazwa skryptu>
 
 
 
-.type(text)
-.type(text, options)
+// Uruchomienie Cypress.IO
+// npx cypress open
+// npx cypress run
 
 
+// *** Visit
 
-.clear()
-.clear(options)
-
-
-
-cy.url()
-cy.url(options)
+// cy.visit(url)
+// cy.visit(url, options)
+// cy.visit(options)
 
 
-
-.check()
-.check(value)
-.check(values)
-.check(options)
-.check(value, options)
-.check(values, options)
+// *** Get
+// cy.get(selector)
+// cy.get(alias)
+// cy.get(selector, options)
+// cy.get(alias, options)
 
 
-.uncheck()
-.uncheck(value)
-.uncheck(values)
-.uncheck(options)
-.uncheck(value, options)
-.uncheck(values, options)
+// *** Eq
+// .eq(index)
+// .eq(indexFromEnd)
+// .eq(index, options)
+// .eq(indexFromEnd, options)
 
 
-cy.fixture(filePath)
-cy.fixture(filePath, encoding)
-cy.fixture(filePath, options)
-cy.fixture(filePath, encoding, options)
+// *** Click
+// .click()
+// .click(options)
+// .click(position)
+// .click(position, options)
+// .click(x, y)
+// .click(x, y, options)
 
 
-
-cy.readFile(filePath)
-cy.readFile(filePath, encoding)
-cy.readFile(filePath, options)
-cy.readFile(filePath, encoding, options)
-
-
-
-cy.viewport(width, height)
-cy.viewport(preset, orientation)
-cy.viewport(width, height, options)
-cy.viewport(preset, orientation, options)
+// *** Contains
+// .contains(content)
+// .contains(content, options)
+// .contains(selector, content)
+// .contains(selector, content, options)
 
 
-
-.children()
-.children(selector)
-.children(options)
-.children(selector, options)
+// *** Type
+// .type(text)
+// .type(text, options)
 
 
-
-.should(chainers)
-.should(chainers, value)
-.should(chainers, method, value)
-.should(callbackFn)
+// *** Clear
+// .clear()
+// .clear(options)
 
 
-
-cy.request(url)
-cy.request(url, body)
-cy.request(method, url)
-cy.request(method, url, body)
-cy.request(options)
+// *** Url
+// cy.url()
+// cy.url(options)
 
 
+// *** Check
+// .check()
+// .check(value)
+// .check(values)
+// .check(options)
+// .check(value, options)
+// .check(values, options)
+
+
+// *** Uncheck
+// .uncheck()
+// .uncheck(value)
+// .uncheck(values)
+// .uncheck(options)
+// .uncheck(value, options)
+// .uncheck(values, options)
+
+
+// *** Fixture
+// cy.fixture(filePath)
+// cy.fixture(filePath, encoding)
+// cy.fixture(filePath, options)
+// cy.fixture(filePath, encoding, options)
+
+
+// *** ReadFile
+// cy.readFile(filePath)
+// cy.readFile(filePath, encoding)
+// cy.readFile(filePath, options)
+// cy.readFile(filePath, encoding, options)
+
+
+// *** Viewport
+// cy.viewport(width, height)
+// cy.viewport(preset, orientation)
+// cy.viewport(width, height, options)
+// cy.viewport(preset, orientation, options)
+
+
+// *** Children
+// .children()
+// .children(selector)
+// .children(options)
+// .children(selector, options)
+
+
+// *** Should
+// .should(chainers)
+// .should(chainers, value)
+// .should(chainers, method, value)
+// .should(callbackFn)
+
+
+// *** Request
+// .request(url)
+// .request(url, body)
+// .request(method, url)
+// .request(method, url, body)
+// .request(options)

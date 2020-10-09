@@ -1,8 +1,8 @@
-
+/// <reference types="cypress" />
 
 
 describe('Cypress.io tests', function() {
-	it('Open cypress.io page', function() {
+	it.only('Open cypress.io page', function() {
 	  var cypressPage = 'https://www.cypress.io/'
 	  cy.visit(cypressPage)
 	  cy.url().should('include', cypressPage);

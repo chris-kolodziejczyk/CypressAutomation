@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-10-09T11:31:05.545Z",
+    "end": "2020-10-09T11:31:15.311Z",
+    "duration": 9766,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5b46907b-cafb-453f-8f8a-631c09e7a4b5",
+      "title": "",
+      "fullFile": "cypress\\integration\\demoTests\\demoTest.js",
+      "file": "cypress\\integration\\demoTests\\demoTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0854bce9-8dd4-405e-b8bc-3f791f59d508",
+          "title": "Cypress.io tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open cypress.io page",
+              "fullTitle": "Cypress.io tests Open cypress.io page",
+              "timedOut": null,
+              "duration": 6623,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var cypressPage = 'https://www.cypress.io/';\ncy.visit(cypressPage);\ncy.url().should('include', cypressPage);\ncy.get('[href=\"/features\"]');\ncy.get('[aria-label=\"see-more-features\"]');\ncy.contains('See more features').click();\ncy.url().should('include', '/features');\ncy.contains('A test runner built for humans');\ncy.contains('An open source, front-end testing tool, built for the modern web.');\ncy.get('input[type=\"email\"]').type('moj@email.com').should('have.value', 'moj@emial.com');",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `[aria-label=\"see-more-features\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `[aria-label=\"see-more-features\"]`, but never found it.\n    ./cypress/integration/demoTests/demoTest.js/</<@https://www.cypress.io/__cypress/tests?p=cypress\\integration\\demoTests\\demoTest.js:105:8\n    setRunnable/runnable.fn@https://www.cypress.io/__cypress/runner/cypress_runner.js:169937:45\n    callFn@https://www.cypress.io/__cypress/runner/cypress_runner.js:104304:21\n    onRunnableRun/<@https://www.cypress.io/__cypress/runner/cypress_runner.js:175515:28\n    finallyHandler@https://www.cypress.io/__cypress/runner/cypress_runner.js:6879:23\n    tryCatcher@https://www.cypress.io/__cypress/runner/cypress_runner.js:10325:23\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@https://www.cypress.io/__cypress/runner/cypress_runner.js:8260:31\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@https://www.cypress.io/__cypress/runner/cypress_runner.js:8317:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@https://www.cypress.io/__cypress/runner/cypress_runner.js:8362:10\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@https://www.cypress.io/__cypress/runner/cypress_runner.js:8442:18\n    _drainQueueStep@https://www.cypress.io/__cypress/runner/cypress_runner.js:5032:12\n    _drainQueue@https://www.cypress.io/__cypress/runner/cypress_runner.js:5025:24\n    ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@https://www.cypress.io/__cypress/runner/cypress_runner.js:5041:16\n    Async/this.drainQueues@https://www.cypress.io/__cypress/runner/cypress_runner.js:4911:14\n    promise callback*schedule@https://www.cypress.io/__cypress/runner/cypress_runner.js:9510:23\n    ../../node_modules/bluebird/js/release/async.js/</Async.prototype._queueTick@https://www.cypress.io/__cypress/runner/cypress_runner.js:5050:14\n    AsyncInvoke@https://www.cypress.io/__cypress/runner/cypress_runner.js:4977:10\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._then@https://www.cypress.io/__cypress/runner/cypress_runner.js:8009:15\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype.then@https://www.cypress.io/__cypress/runner/cypress_runner.js:7873:17\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype.catch@https://www.cypress.io/__cypress/runner/cypress_runner.js:7854:17\n    onRunnableRun@https://www.cypress.io/__cypress/runner/cypress_runner.js:175486:48\n    action@https://www.cypress.io/__cypress/runner/cypress_runner.js:166073:28\n    patchRunnableRun/Runnable.prototype.run@https://www.cypress.io/__cypress/runner/cypress_runner.js:173900:13\n    next/<@https://www.cypress.io/__cypress/runner/cypress_runner.js:105089:12\n    next@https://www.cypress.io/__cypress/runner/cypress_runner.js:104872:14\n    next/<@https://www.cypress.io/__cypress/runner/cypress_runner.js:104882:11\n    next@https://www.cypress.io/__cypress/runner/cypress_runner.js:104784:14\n    timeslice@https://www.cypress.io/__cypress/runner/cypress_runner.js:98776:27\n    monkeypatchBefore/<@https://www.cypress.io/__cypress/runner/cypress_runner.js:177345:21\n    next@https://www.cypress.io/__cypress/runner/cypress_runner.js:104875:10\n    next/<@https://www.cypress.io/__cypress/runner/cypress_runner.js:104882:11\n    next@https://www.cypress.io/__cypress/runner/cypress_runner.js:104784:14\n    next/<@https://www.cypress.io/__cypress/runner/cypress_runner.js:104845:11\n    next@https://www.cypress.io/__cypress/runner/cypress_runner.js:175436:22\n    onNext/<@https://www.cypress.io/__cypress/runner/cypress_runner.js:175458:15\n    tryCatcher@https://www.cypress.io/__cypress/runner/cypress_runner.js:10325:23\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@https://www.cypress.io/__cypress/runner/cypress_runner.js:8260:31\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@https://www.cypress.io/__cypress/runner/cypress_runner.js:8317:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@https://www.cypress.io/__cypress/runner/cypress_runner.js:8362:10\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@https://www.cypress.io/__cypress/runner/cypress_runner.js:8442:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._fulfill@https://www.cypress.io/__cypress/runner/cypress_runner.js:8386:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._resolveCallback@https://www.cypress.io/__cypress/runner/cypress_runner.js:8180:57\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@https://www.cypress.io/__cypress/runner/cypress_runner.js:8272:17\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@https://www.cypress.io/__cypress/runner/cypress_runner.js:8317:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@https://www.cypress.io/__cypress/runner/cypress_runner.js:8362:10\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@https://www.cypress.io/__cypress/runner/cypress_runner.js:8442:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._fulfill@https://www.cypress.io/__cypress/runner/cypress_runner.js:8386:18\n    ../../node_modules/bluebird/js/release/promise_array.js/module.exports/PromiseArray.prototype._resolve@https://www.cypress.io/__cypress/runner/cypress_runner.js:8659:19\n    ../../node_modules/bluebird/js/release/promise_array.js/module.exports/PromiseArray.prototype._promiseFulfilled@https://www.cypress.io/__cypress/runner/cypress_runner.js:8677:14\n    ../../node_modules/bluebird/js/release/promise_array.js/module.exports/PromiseArray.prototype._iterate@https://www.cypress.io/__cypress/runner/cypress_runner.js:8647:31\n    init@https://www.cypress.io/__cypress/runner/cypress_runner.js:8611:10\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@https://www.cypress.io/__cypress/runner/cypress_runner.js:8314:21\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@https://www.cypress.io/__cypress/runner/cypress_runner.js:8362:10\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@https://www.cypress.io/__cypress/runner/cypress_runner.js:8442:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._fulfill@https://www.cypress.io/__cypress/runner/cypress_runner.js:8386:18\n    ../../node_modules/bluebird/js/release/promise_array.js/module.exports/PromiseArray.prototype._resolve@https://www.cypress.io/__cypress/runner/cypress_runner.js:8659:19\n",
+                "diff": null
+              },
+              "uuid": "8dac29ec-96aa-4103-97bc-42a77b187be4",
+              "parentUUID": "0854bce9-8dd4-405e-b8bc-3f791f59d508",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "8dac29ec-96aa-4103-97bc-42a77b187be4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6623,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

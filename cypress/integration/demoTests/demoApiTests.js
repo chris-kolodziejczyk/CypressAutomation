@@ -1,6 +1,5 @@
 /// <reference types="cypress" />
 
-
 describe('Login page cookies test', () => {
 	beforeEach(function () {
 	
