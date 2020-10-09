@@ -1,0 +1,128 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-10-09T10:43:49.109Z",
+    "end": "2020-10-09T10:43:49.799Z",
+    "duration": 690,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6ec4d0f2-d651-4c2d-a827-649acbe0d209",
+      "title": "",
+      "fullFile": "cypress\\integration\\demoTests\\loginPageTests.js",
+      "file": "cypress\\integration\\demoTests\\loginPageTests.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e81ca3e8-eca9-49d8-bdf3-a54cb78cc5e5",
+          "title": "Login page cookies test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "3f070fb4-3a82-42ac-bbec-dbe6694f28d5",
+              "title": "Login page cookies test",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "When accept Cookies Then checkCookiesNotVisible Should check if cookies warning is not visible",
+                  "fullTitle": "Login page cookies test Login page cookies test When accept Cookies Then checkCookiesNotVisible Should check if cookies warning is not visible",
+                  "timedOut": null,
+                  "duration": 446,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "",
+                  "err": {
+                    "message": "ReferenceError: loginPage is not defined\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Login page cookies test`",
+                    "estack": "ReferenceError: loginPage is not defined\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Login page cookies test`\n    at Context.eval (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\integration\\demoTests\\loginPageTests.js:102:5)",
+                    "diff": null
+                  },
+                  "uuid": "0fbd0d78-88bb-4cc4-8d50-afdd9fc5db43",
+                  "parentUUID": "3f070fb4-3a82-42ac-bbec-dbe6694f28d5",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "0fbd0d78-88bb-4cc4-8d50-afdd9fc5db43"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 446,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
