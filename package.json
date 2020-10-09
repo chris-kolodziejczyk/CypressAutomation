@@ -4,11 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules\\.bin\\cypress run",
-    "headTest": "npm run test -- --headed",
-    "chromeTest": "npm run test -- --browser chrome",
-    "recordDashBoardTest": "npm run test -- --record --key fa423514-5a84-42a7-b6a0-b5e7191bba12 --reporter mochawesome",
-    "GreenKartTest": "npm run test -- --spec \"cypress/integration/GreenKart/*\""
+    "cyopen": "cypress open",
+    "cyrun": "cypress run"
   },
   "author": "Krzysztof Kolodziejczyk",
   "license": "MIT",

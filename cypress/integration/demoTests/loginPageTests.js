@@ -1,5 +1,6 @@
 
 
+
 describe('Login page cookies test', () => {
 	beforeEach(function () {
 		console.log(Cypress.env());
