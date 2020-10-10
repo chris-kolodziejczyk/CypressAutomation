@@ -1,13 +1,12 @@
 /// <reference types="cypress" />
 
-describe('Login page cookies test', () => {
-	beforeEach(function () {
-	
-		
+describe('breweries list', () => {
+	beforeEach(() => {
+
 	});
 
-	context('Login page cookies test', () => {
-		it('When accept Cookies Then checkCookiesNotVisible Should check if cookies warning is not visible', () => {
+	context('breweries list  context', () => {
+		it('Log breweries list', () => {
 			
 			cy.fixture('example').then((obj) => {
 

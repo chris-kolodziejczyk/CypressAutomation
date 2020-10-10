@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-10-10T12:29:33.815Z",
+    "end": "2020-10-10T12:29:34.927Z",
+    "duration": 1112,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9985d9ed-2f8c-4739-bc45-fd537215b784",
+      "title": "",
+      "fullFile": "cypress\\integration\\demoTests\\demoApiTests.js",
+      "file": "cypress\\integration\\demoTests\\demoApiTests.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "46d615e5-9cdb-41a3-ba5d-2ceb96c9d979",
+          "title": "Login page cookies test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "7c7ec268-c2f1-444c-9da3-fc7b2d2bceb2",
+              "title": "Login page cookies test",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "When accept Cookies Then checkCookiesNotVisible Should check if cookies warning is not visible",
+                  "fullTitle": "Login page cookies test Login page cookies test When accept Cookies Then checkCookiesNotVisible Should check if cookies warning is not visible",
+                  "timedOut": null,
+                  "duration": 1054,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.fixture('example').then(function (obj) {\n  cy.request({\n    url: obj.apiEndpoint,\n    method: 'GET',\n    headers: {},\n    body: {},\n    redirect: true\n  }).then(function (res) {\n    if (expect(res.status).to.be.equal(200)) {\n      console.log(res.body);\n    }\n  });\n});",
+                  "err": {},
+                  "uuid": "987e9415-2e5e-40d7-a2ba-5ec54c75cd1b",
+                  "parentUUID": "7c7ec268-c2f1-444c-9da3-fc7b2d2bceb2",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "987e9415-2e5e-40d7-a2ba-5ec54c75cd1b"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1054,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
