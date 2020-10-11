@@ -5,7 +5,7 @@ describe('breweries list', () => {
 
 	});
 
-	context('breweries list  context', () => {
+	context('breweries list context', () => {
 		it('Log breweries list', () => {
 			
 			cy.fixture('example').then((obj) => {
