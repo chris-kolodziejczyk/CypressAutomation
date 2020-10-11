@@ -1,3 +1,10 @@
+bin
+cypress/results/*
+.vscode/
+node_modules/
+package-lock.json
+cypress/videos/
+/cypress/logs
 # Logs
 logs
 *.log
