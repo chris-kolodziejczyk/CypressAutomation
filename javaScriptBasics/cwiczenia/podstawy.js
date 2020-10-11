@@ -71,3 +71,13 @@ let url = 'http://mojastrona.pl?text=Uczę się stringów w Javascript';
 //  NOTE:   Zadanie 8
 
 // Wygeneruj pod zmienną uniqueID tekst będący losowym ciągiem liter i cyfr o długości 20.
+
+
+// Zadania dodatkowe
+
+// 1
+/* Stwórz obiekt o nazwie 'library', który będzie zawierał 5 kluczy (książek).
+Wartość każdego klucza to obiekt zawierający następujące wpisy jako kolejne klucze: Tytuł, Autor, Data wydania, Ilość stron.
+Wartością każdego klucza: Tytuł, Autor, Data wydania, Ilość stron, powinna być lista w której znajdą się odpowiednie wpisy.
+
+Następnie stwórz listę w której każda pozycja będzie listą zawierającą wartości dla każdej książki z obiektu 'library' */
