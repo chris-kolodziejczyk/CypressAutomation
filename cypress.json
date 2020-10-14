@@ -17,7 +17,7 @@
       "displayName": "Firefox",
       "family": "firefox",
       "info": "Firefox support is currently in beta! You can help us continue to improve the Cypress + Firefox experience by [reporting any issues you find](https://on.cypress.io/new-issue).",
-      "majorVersion": 74,
+      "majorVersion": 81,
       "name": "firefox",
       "path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
       "version": "74.0.0.7373",
@@ -53,10 +53,10 @@
   "projectId": "null",
   "reporter": "mochawesome",
   "reporterOptions": {
-      "reportDir": "cypress/results/reports",
-      "overwrite": false,
-      "html": true,
-      "json": true
+    "reportDir": "cypress/results/reports",
+    "overwrite": false,
+    "html": true,
+    "json": true
   },
   "requestTimeout": 5000,
   "responseTimeout": 30000,
