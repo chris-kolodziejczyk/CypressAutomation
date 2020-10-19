@@ -34,7 +34,7 @@
     }
   ],
   "env": {
-    "url": "https://rahulshettyacademy.com"
+    "url": "TestArena"
   },
   "chromeWebSecurity": true,
   "defaultCommandTimeout": 4000,
@@ -73,5 +73,5 @@
   "viewportHeight": 768,
   "viewportWidth": 1366,
   "waitForAnimations": true,
-  "watchForFileChanges": true
+  "watchForFileChanges": false
 }

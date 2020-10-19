@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "cyopen": "cypress open",
-    "cyrun": "cypress run"
+    "cyrun": "cypress run",
+    "cyrun-chrome": "cypress run -b chrome",
+    "cyrun-firefox": "cypress run -b firefox",
+    "cyrun-edge": "cypress run -b edge"
   },
   "author": "Krzysztof Kolodziejczyk",
   "license": "MIT",

@@ -1,6 +1,7 @@
 {
  "login" :"administrator@testarena.pl",
  "pass":"sumXQQ72$L",
+ "falsePass" : "",
  "footerItemsText": ["Kokpit", "Regulamin", "Dokumentacja", "Kontakt"],
  "footerLanguage": ["english", "polski"],
  "apiEndpoint": "https://api.openbrewerydb.org/breweries"
