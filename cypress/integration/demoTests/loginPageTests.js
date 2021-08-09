@@ -8,29 +8,17 @@ describe('Login page scenario', () => {
 	});
 
 	context('Login to test arena', () => {
-		it.only('Proper login', () => {
-			// JSON.parse()
-
-			cy.fixture('example').then((loginPageData) => {
-				loginPage.loginToTestArena(loginPageData.login, loginPageData.pass);
-
-				cy.url().should('include', 'http://demo.testarena.pl');
-			});
-	
-		});
 
 		it('Login with wrong pass', () => {
-			cy.fixture('example').then((loginPageData) => {
-				loginPage.loginToTestArena(loginPageData.login, loginPageData.falsePass);
-
-				cy.url().should('include', 'http://demo.testarena.pl');
-			});
+			// Wpisanie poprawnego adresu e-mail
+			// Wpisanie hasła
+			// kliknięcie w przycisk logowania
 		});
 
 		it('Login with wrong email', () => {
-			loginPage.loginToTestArena();
-
-			cy.url().should('include', 'http://demo.testarena.pl');
+			// Wpisanie niepoprawnego adresu e-mail
+			// Wpisanie poprawnego hasła
+			// kliknięcie w przycisk logowania
 		});
 	});
 });
