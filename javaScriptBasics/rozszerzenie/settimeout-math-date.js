@@ -59,7 +59,7 @@
 // console.log(clock())
 
 
-// NOTE: Przykłądowy generator
+// NOTE: Przykładowy generator
 // class Generator {
 
 // 	constructor() {
