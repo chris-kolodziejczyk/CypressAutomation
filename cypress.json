@@ -7,7 +7,7 @@
       "channel": "stable",
       "displayName": "Chrome",
       "family": "chromium",
-      "majorVersion": 80,
+      "majorVersion": 92,
       "name": "chrome",
       "path": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
       "version": "80.0.3987.163"
@@ -17,7 +17,7 @@
       "displayName": "Firefox",
       "family": "firefox",
       "info": "Firefox support is currently in beta! You can help us continue to improve the Cypress + Firefox experience by [reporting any issues you find](https://on.cypress.io/new-issue).",
-      "majorVersion": 81,
+      "majorVersion": 90,
       "name": "firefox",
       "path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
       "version": "74.0.0.7373",
@@ -27,7 +27,7 @@
       "channel": "stable",
       "displayName": "Edge",
       "family": "chromium",
-      "majorVersion": 80,
+      "majorVersion": 92,
       "name": "edge",
       "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
       "version": "80.0.361.66"
