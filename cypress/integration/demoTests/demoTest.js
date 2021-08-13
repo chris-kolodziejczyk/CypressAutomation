@@ -1,9 +1,14 @@
 /// <reference types="cypress" />
 
+import { LoginPage } from "../../pages/pageObjects/loginPage/loginPage";
+
 describe('Demo TestArena Tests', function () {
 
   context('Demo tests',() => {
     it.only('Demo login test', function () {
+      
+    
+      
       let testArenaDemoPage = 'http://demo.testarena.pl/zaloguj';
       cy.visit(testArenaDemoPage);
       cy.url().should('include', 'demo.testarena');

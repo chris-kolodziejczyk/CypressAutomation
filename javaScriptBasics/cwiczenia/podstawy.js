@@ -51,7 +51,24 @@ Wypisz ich typ w konsoli, a następnie dodaj do siebie tak, by wyszedł wynik 57
 
 // Chcemy do tego adresu po znaku zapytania wstawić zmienną "text", którą potem ewentualnie mogła by odczytać inna podstrona.Zmienna ta powinna mieć wartość tekstu z 5 zadania:
 
-let url = 'http://mojastrona.pl?text=Uczę się stringów w Javascript';
+
+
+
+
+
+
+
+let url = 'http://mojastrona.pl?text=Uczę';
+
+// Dodaj metodę która każdorazowo zmienia wartość dla parametru text w url
+// Metoda powinna zwracać url // Metoda nie powinna logować url
+// Wyloguj w konsoli url
+
+
+
+
+
+
 
 // Jak wiesz, spacji i podobnych znaków nie może być w adresie strony.Za pomocą odpowiednich zmiennych, dodawania i wykorzystując odpowiednie metody uzyskaj prawidłowy odpowiednio zakodowany adres url.
 
@@ -79,5 +96,11 @@ let url = 'http://mojastrona.pl?text=Uczę się stringów w Javascript';
 /* Stwórz obiekt o nazwie 'library', który będzie zawierał 5 kluczy (książek).
 Wartość każdego klucza to obiekt zawierający następujące wpisy jako kolejne klucze: Tytuł, Autor, Data wydania, Ilość stron.
 Wartością każdego klucza: Tytuł, Autor, Data wydania, Ilość stron, powinna być lista w której znajdą się odpowiednie wpisy.
+Wylogować w konsoli wartości dla każdej z książek: Tytuł, Autor, Data wydania, Ilość stron
+
+
+
+
+
 
 Następnie stwórz listę w której każda pozycja będzie listą zawierającą wartości dla każdej książki z obiektu 'library' */

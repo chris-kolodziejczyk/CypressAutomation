@@ -1,10 +1,9 @@
 
 
-
-
 // HACK: TABLICE
 
-let osoby = ['Jan Kowalski', 'Adam Nowak', 'Maria Z', 'Janusz G', 'Marcin J']
+
+
 
 // console.log(osoby)
 
@@ -123,7 +122,6 @@ Tablica na której filter został wywołany
 // console.log("Posortowana bez funkcji porównującej: " + mixedNumericArray.sort())
 // console.log("Posortowana z funkcją porównującą: " + mixedNumericArray.sort(compareNumbers))
 
-
 // NOTE: Przykład 2
 
 // let arr = []
@@ -175,14 +173,12 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 // console.log(arr)
 // console.log(osoby)
 
-
 // **************************************************************************
 // HACK: OBIEKTY
 
 // NOTE:Tworzenie pustego obiektu:
 
 // let obj = {}
-
 
 // NOTE: Inicjacja obiektu z wartościami:
 
@@ -202,7 +198,6 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 
 // obj["foo"]  //"Hello"
 
-
 // NOTE: Modyfikacja właściwości w obiekcie:
 
 // const objectExample = {
@@ -211,21 +206,14 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 //     bar: "World"
 // }
 
-// let obj = {
-//     foo: () => {},
-//     bar: "World"
-// }
-
 // obj.foo = "hi"
 // obj["foo"] = "hi"
-
 
 // NOTE: Przejdź pętlą przez klucze obiektu:
 
 // for (let key in obj) {
 //     console.log(key)
 // }
-
 
 // **************************************************************************
 // let suffix = " name"

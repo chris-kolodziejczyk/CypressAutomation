@@ -8,17 +8,32 @@ describe('Login page scenario', () => {
 	});
 
 	context('Login to test arena', () => {
+		it('Login to app', () => {
+			loginPage.login();
+			cy.get('.icons-switch.icon-20').should('be.visible');
 
-		it('Login with wrong pass', () => {
 			// Wpisanie poprawnego adresu e-mail
 			// Wpisanie hasła
 			// kliknięcie w przycisk logowania
 		});
 
+		it('Login with wrong pass', () => {
+			loginPage.login('administrator@testarena.pl', '*&#^#*&%^#');
+			cy.get('#login').should('be.visible');
+			// Wpisanie niepoprawnego adresu e-mail
+			// Wpisanie hasła
+			// kliknięcie w przycisk logowania
+		});
+
 		it('Login with wrong email', () => {
+			loginPage.login('^%$*@#%@*%$(@*');
+			cy.get('#login').should('be.visible');
+
+			
 			// Wpisanie niepoprawnego adresu e-mail
 			// Wpisanie poprawnego hasła
 			// kliknięcie w przycisk logowania
 		});
 	});
+	
 });

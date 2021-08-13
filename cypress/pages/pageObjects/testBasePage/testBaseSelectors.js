@@ -1,0 +1,15 @@
+export default {
+	testListBtn: '#content > article > nav > ul > div > a',
+	testOptionList: '#content > article > nav > ul > div > div > ul',
+	testName: '#name',
+	testDescription: '#description',
+	infoBox: '#j_info_box',
+	testCard: '#testCard',
+	duration: '#duration',
+	addPosition: '#j_addChecklistItemButton',
+	position3: '#itemName_0',
+	position4: '#itemName_1',
+	position5: '#itemName_2',
+	position6: '#itemName_3',
+	position7: '#itemName_4',
+};

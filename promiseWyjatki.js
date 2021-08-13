@@ -1,4 +1,3 @@
-
 // NOTE: Wyjątki:
 
 // class Animal {
@@ -17,7 +16,7 @@
 //     super(myDogName,myDogAge)
 //   }
 //   myDogSpeak() {
-  
+
 //     try {
 //       speak()
 //       console.log(this.name + ' age: ' + this.age)
@@ -32,29 +31,39 @@
 
 // dog.myDogSpeak()
 
-
 // let examplePromise = new Promise(function (resolve, reject) {
-//     setTimeout(function () {
-//         resolve('foo')
-//     }, 300)
-// })
+// 	setTimeout(function () {
+// 		resolve('foo');
+// 	}, 300);
+// });
 
-// examplePromise.then((value) => {
-//     console.log(value)
+// let example = () => {
+// 	let name = 'Krzysztof';
+// 	console.log(name);
 
-//     return value
-//     // expected output: "foo"
-// }).then((newValue) => {
+// 	return name;
+// };
 
-//   console.log(newValue)
-//   newValue = 1
+// examplePromise
+// 	.then((value) => {
+// 		console.log(value);
 
-//   console.log(newValue)
-// })
+// 		return value;
+// 		// expected output: "foo"
+// 	})
 
-// console.log(examplePromise)
+// 	.then((newValue) => {
+// 		console.log(newValue);
+// 		newValue = 1;
+
+// 		console.log(newValue);
+// 	})
+// 	.catch((err) => {
+// 		console.log(err);
+// 	});
+
+// console.log(examplePromise);
 // expected output: [object Promise]
-
 
 // NOTE: Obsługa błędów
 
@@ -71,4 +80,4 @@
 // }).catch(err => console.log(err))
 
 // console.log(promise1)
-  // expected output: [object Promise]
+// expected output: [object Promise]

@@ -16,12 +16,13 @@ describe('breweries list', () => {
 						  headers: {},
 				  body: {},
 				  redirect: true
-				}).then((res) => {
+				})			
+				.then((res) => {
 		  
-				  if(expect(res.status).to.be.equal(200)) {
-					console.log(res.body)
-				  }
-				})
+					if(expect(res.status).to.be.equal(200)) {
+					  console.log(res.body)
+					}
+				  })
 			  })
 		});
 	});

@@ -31,6 +31,9 @@
 
 */
 
+
+
+
 typeof null        // "object"
 typeof undefined   // "undefined"
 null === undefined // false
@@ -113,6 +116,8 @@ isNaN(1 + undefined) // true
 
 // **********************************
 // Metoda: indexOf(str)
+
+
 
 // console.log('Krzysztof'.indexOf('f'))
 
