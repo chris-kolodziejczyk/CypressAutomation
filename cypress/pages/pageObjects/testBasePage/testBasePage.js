@@ -43,25 +43,25 @@ export class TestBasePage extends BasePage {
 				urlTxt === 'http://demo.testarena.pl/LITD/test/add_checklist'
 			) {
 				// Zamienić na pętle
-				cy.contains('Dodaj pozycję').click();
-				cy.get(testBaseSelectors.position3).type(parameters.position1);
-				cy.contains('Dodaj pozycję').click();
-				cy.get(testBaseSelectors.position4).type(parameters.position2);
-				cy.contains('Dodaj pozycję').click();
-				cy.get(testBaseSelectors.position5).type(parameters.position3);
-				cy.contains('Dodaj pozycję').click();
-				cy.get(testBaseSelectors.position6).type(parameters.position4);
-				cy.contains('Dodaj pozycję').click();
-				cy.get(testBaseSelectors.position7).type(parameters.position5);
+				// cy.contains('Dodaj pozycję').click();
+				// cy.get(testBaseSelectors.position3).type(parameters.position1);
+				// cy.contains('Dodaj pozycję').click();
+				// cy.get(testBaseSelectors.position4).type(parameters.position2);
+				// cy.contains('Dodaj pozycję').click();
+				// cy.get(testBaseSelectors.position5).type(parameters.position3);
+				// cy.contains('Dodaj pozycję').click();
+				// cy.get(testBaseSelectors.position6).type(parameters.position4);
+				// cy.contains('Dodaj pozycję').click();
+				// cy.get(testBaseSelectors.position7).type(parameters.position5);
+				for (let i = 1; i <= 5; i++) {
+					cy.contains('Dodaj pozycję').click();
+					cy.get(testBaseSelectors[`position${i + 2}`]).type(
+						parameters[`position${i}`]
+					);
+				}
 			}
-
-			// cy.contains('Zapisz').click();
+			cy.contains('Zapisz').click();
 		});
-
-		// Dodanie warunku dla wypełnienia formularza listy kontrolnej
-		// dodanie minimum 5 pozycji
-		// Zapisanie testu
-		// Sprawdzenie czy wyświetlony został komunikat
 
 		return this;
 	}
