@@ -1,11 +1,14 @@
-
-
 // HACK: TABLICE
 
+const osoby = [
+	'Jan Kowalski',
+	'Mateusz Buła',
+	'Filip Konopka',
+	'Nadzieja Kowalewicz',
+	'Adam Miałczyński',
+];
 
-
-
-// console.log(osoby)
+console.log(osoby);
 
 // *****************************************
 
