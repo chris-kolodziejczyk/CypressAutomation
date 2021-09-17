@@ -13,12 +13,12 @@
   "author": "Krzysztof Kolodziejczyk",
   "license": "MIT",
   "dependencies": {
-    "cypress": "^8.2.0",
-    "mocha": "^9.0.3",
-    "mochawesome": "^6.2.2",
-    "@testing-library/cypress": "^8.0.0",
-    "cypress-failed-log": "^2.9.2",
-    "mochawesome-report-generator": "^5.2.0",
+    "cypress": ">=8.4.0",
+    "mocha": ">=9.1.1",
+    "mochawesome": ">=6.2.2",
+    "@testing-library/cypress": ">=8.0.1",
+    "cypress-failed-log": ">=2.9.2",
+    "mochawesome-report-generator": ">=5.2.0",
     "path": ">=0.12.7"
   }
 }
