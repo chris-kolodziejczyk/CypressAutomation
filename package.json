@@ -13,7 +13,7 @@
   "author": "Krzysztof Kolodziejczyk",
   "license": "MIT",
   "dependencies": {
-    "cypress": ">=8.4.0",
+    "cypress": ">=8.4.1",
     "mocha": ">=9.1.1",
     "mochawesome": ">=6.2.2",
     "@testing-library/cypress": ">=8.0.1",
