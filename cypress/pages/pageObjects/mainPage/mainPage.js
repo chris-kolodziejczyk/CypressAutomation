@@ -8,6 +8,12 @@ export class MainPage extends BasePage {
 
 	logOut() {
 		cy.get(mainPageSelectors.logOutBtn).click();
+		return this;
+	}
+
+	goToTestBase() {
+		cy.get(mainPageSelectors.testBaseMenuOpt).click();
+		return this;
 	}
 }
 
