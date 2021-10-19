@@ -47,15 +47,15 @@ console.log(osoby);
 // METODA: map(callback)
 // let arr = [
 //     {
-//         login: 'login',
+//         login: 'login1',
 //         password: 'password1'
 //     },
 //     {
-//         login: 'login',
+//         login: 'login2',
 //         password: 'password2'
 //     },
 //     {
-//         login: 'login',
+//         login: 'login3',
 //         password: 'password3'
 //     }
 // ]

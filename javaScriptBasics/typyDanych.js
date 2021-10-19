@@ -17,7 +17,7 @@
 
     symbol: unikalny, niezmienny klucz 
     const symbol1 = Symbol()
-    const symbol2 = Symbol(42)
+    const symbol2 = Symbol()
     const symbol3 = Symbol('foo')
 
     number: liczby całkowite lub dziesiętne
@@ -27,7 +27,7 @@
 
     object: zbiór właściwości
     let obiekt = {}
-    let lista = []  
+    let lista = []
 
 */
 
@@ -117,8 +117,6 @@ isNaN(1 + undefined) // true
 // **********************************
 // Metoda: indexOf(str)
 
-
-
 // console.log('Krzysztof'.indexOf('f'))
 
 // **********************************
@@ -139,7 +137,7 @@ isNaN(1 + undefined) // true
 // **********************************
 // Metoda: split(str)
 
-// console.log('K,r,z,y,s,z,t,o,f'.split(','))
+// console.log('K,r,z,y,s z,t,o,f'.split(','))
 
 // **********************************
 // Metoda: toLowerCase()
