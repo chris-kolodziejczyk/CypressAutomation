@@ -1,1 +1,17 @@
-export default {};
+export default {
+	addTask: '.button_link',
+	title: '#title',
+	description: '#description',
+	releaseName: '#releaseName',
+	dueDate: '#dueDate',
+	assignToList: '#ui-id-1',
+	assigneeName: '#assigneeName',
+	assignToMe: '#j_assignToMe',
+	environments: '#token-input-environments',
+	environmentsList: 'body > div:nth-child(10)',
+	version: '#token-input-versions',
+	versionList: 'body > div:nth-child(11) ',
+	priority: '#priority',
+	save: '#save',
+	taskConfirmationTxt: '#j_info_box > p',
+};

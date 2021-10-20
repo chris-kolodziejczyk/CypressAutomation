@@ -1,5 +1,4 @@
 import BasePage from '../basePage';
-import tasksPageSelectors from '../tasksPage/tasksPageSelectors';
 import mainPageSelectors from './mainPageSelectors';
 
 export class MainPage extends BasePage {
