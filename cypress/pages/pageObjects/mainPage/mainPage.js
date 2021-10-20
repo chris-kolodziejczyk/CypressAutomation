@@ -1,4 +1,5 @@
 import BasePage from '../basePage';
+import tasksPageSelectors from '../tasksPage/tasksPageSelectors';
 import mainPageSelectors from './mainPageSelectors';
 
 export class MainPage extends BasePage {
@@ -11,8 +12,12 @@ export class MainPage extends BasePage {
 		return this;
 	}
 
-	goToTestBase() {
-		cy.get(mainPageSelectors.testBaseMenuOpt).click();
+	goToMenuOpt(menuOpt = 'Baza testów') {
+		cy.get(mainPageSelectors.menuList)
+			.children()
+			.then((mainMenuElems) => {
+				cy.wrap(mainMenuElems).contains(menuOpt).click();
+			});
 		return this;
 	}
 }

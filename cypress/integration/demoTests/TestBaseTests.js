@@ -4,7 +4,7 @@ import { testBasePage } from '../../pages/pageObjects/testBase/testBasePage';
 
 describe('Demo TestArena Tests', function () {
 	context('Demo tests', () => {
-		it.only('Demo main page test', function () {
+		it.only('Demo test base page test', function () {
 			loginPage.visitPage().login();
 			mainPage.goToTestBase();
 			testBasePage
