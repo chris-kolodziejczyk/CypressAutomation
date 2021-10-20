@@ -15,12 +15,15 @@ describe('Demo TestArena Tests', function () {
 					tasksPage.randomString(10, 'letters'),
 					tasksPage.randomString(10, 'letters'),
 					'2',
-					1,
+					0,
 					'2',
-					1,
+					0,
 					'Krytyczny',
 					'2020-06-06 23:59',
-					'me'
+					'other',
+					'Gall',
+					0,
+					''
 				)
 				.checkAddTaskConfirmation();
 		});

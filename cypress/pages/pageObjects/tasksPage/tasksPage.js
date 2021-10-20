@@ -43,11 +43,17 @@ export class TasksPage extends BasePage {
 		return this;
 	}
 
-	assignTo(choose, name) {
+	assignTo(choose, name, assignToListIndex) {
 		if (choose === 'me') {
 			cy.get(tasksPageSelectors.assignToMe).click();
 		} else if (choose === 'other') {
 			cy.get(tasksPageSelectors.assigneeName).type(name);
+			cy.wait(2000);
+			cy.get(tasksPageSelectors.assignToList)
+				.children()
+				.then((assignToElems) => {
+					cy.wrap(assignToElems).eq(assignToListIndex).click();
+				});
 		}
 
 		return this;
@@ -83,6 +89,7 @@ export class TasksPage extends BasePage {
 		date,
 		choose,
 		name,
+		assignToListIndex,
 		closeOpt
 	) {
 		cy.get(tasksPageSelectors.addTask).click();
@@ -97,7 +104,7 @@ export class TasksPage extends BasePage {
 		)
 			.selectPriority(priorityName)
 			.releaseDate(date)
-			.assignTo(choose, name)
+			.assignTo(choose, name, assignToListIndex)
 			.closeTaskForm(closeOpt);
 		cy.wait(2000);
 
