@@ -1,7 +1,10 @@
-
 /*
 
     // NOTE: Typy prymitywne:
+
+
+    
+
 
     undefined: zmienna, która nie ma przypisanej wartości
     undefined
@@ -31,18 +34,15 @@
 
 */
 
-
-
-
-typeof null        // "object"
-typeof undefined   // "undefined"
-null === undefined // false
-null == undefined // true
-null === null // true
-null == null // true
-!null // true
-isNaN(1 + null) // false
-isNaN(1 + undefined) // true
+typeof null; // "object"
+typeof undefined; // "undefined"
+null === undefined; // false
+null == undefined; // true
+null === null; // true
+null == null; // true
+!null; // true
+isNaN(1 + null); // false
+isNaN(1 + undefined); // true
 
 // console.log(5 * null) // 0
 // console.log(null * 5) // 0
@@ -80,13 +80,12 @@ isNaN(1 + undefined) // true
 // **********************************
 // NOTE: Przykłady
 
-
 // NOTE: Symbol
 
 // console.log(Symbol('foo') === Symbol('foo'))
 
 // **********************************
-// console.log(Symbol('foo').toString().split('o'))  
+// console.log(Symbol('foo').toString().split('o'))
 
 // **********************************
 // let age = 30
@@ -102,7 +101,6 @@ isNaN(1 + undefined) // true
 
 // console.log("Direct: " + user[Object.getOwnPropertySymbols(user)[0]])
 
-
 // NOTE: String
 
 // Metoda: length
@@ -112,15 +110,16 @@ isNaN(1 + undefined) // true
 // **********************************
 // Metoda: charAt(index)
 
-// console.log('Krzysztof'.charAt(8))
+// console.log('Krzysztof'.charAt(8)) // f
 
 // **********************************
 // Metoda: indexOf(str)
 
-// console.log('Krzysztof'.indexOf('f'))
+// console.log('Krzysztof'.indexOf('f')) // 8
 
 // **********************************
 // Metoda: replace(str, newStr)
+
 
 // console.log('Krzysztof'.replace('Krzysztof', 'Michał'))
 
@@ -152,4 +151,4 @@ isNaN(1 + undefined) // true
 // **********************************
 // Metoda: inludes()
 
-// console.log('Krzysztof'.includes('f'))
+// console.log('Krzyszto'.includes('f'))

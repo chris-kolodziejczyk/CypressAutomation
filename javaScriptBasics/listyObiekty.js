@@ -6,9 +6,10 @@ const osoby = [
 	'Filip Konopka',
 	'Nadzieja Kowalewicz',
 	'Adam Miałczyński',
+	['Krzysztof Kołodziejczyk']
 ];
 
-console.log(osoby);
+console.log(osoby[5][0]);
 
 // *****************************************
 

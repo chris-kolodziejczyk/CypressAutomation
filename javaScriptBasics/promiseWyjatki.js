@@ -81,3 +81,16 @@
 
 // console.log(promise1)
 // expected output: [object Promise]
+
+let logTxt = (callback) => {
+	let text = 'txt';
+
+	callback(text);
+};
+
+let logNewTxt = () => {
+    
+	logTxt((text) => {
+		console.log(text);
+	});
+};
