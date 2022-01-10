@@ -18,19 +18,19 @@ describe('Demo TestArena Tests', function () {
 			// });
 		});
 
-		it.only('Demo add test to test base', function () {
+		it('Demo add test to test base', function () {
 			loginPage.visitPage().login();
 			mainPage.goToTestBase();
 			testBasePage.addTestCase(3, 1, 1).checkAddTestCase();
 		});
 
-		it.only('Demo add test to test base1', function () {
+		it('Demo add test to test base1', function () {
 			loginPage.visitPage().login();
 			mainPage.goToTestBase();
 			testBasePage.addTestCase(0, 0, 0)
 		});
 
-		it.only('Demo add test to test base1', function () {
+		it('Demo add test to test base1', function () {
 			loginPage.visitPage().login();
 			mainPage.goToTestBase();
 			testBasePage.addTestCase(255, 5000, 1000)
