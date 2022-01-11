@@ -9,7 +9,8 @@
         instrukcja
     } else if () {
         instrukcja
-    } else {
+    } 
+    else {
         instrukcja
     }
 
@@ -19,7 +20,9 @@
 
     switch (wyrażenie) {
         case wartość1: instrukcja1
+        break
         case wartość2: instrukcja2
+        break
         default: instrukcja
     }
 

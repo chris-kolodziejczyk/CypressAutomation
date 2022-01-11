@@ -16,7 +16,7 @@ describe('breweries list', () => {
 					if (expect(res.status).to.be.equal(200)) {
 						console.log(res.body);
 					}
-				});
+				})
 			});
 		});
 	});

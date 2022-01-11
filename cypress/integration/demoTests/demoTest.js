@@ -3,37 +3,46 @@
 import { loginPage } from '../../pages/pageObjects/loginPage/loginPage';
 import { mainPage } from '../../pages/pageObjects/mainPage/mainPage';
 import { testBasePage } from '../../pages/pageObjects/testBase/testBasePage';
+import { releasesPage } from '../../pages/pageObjects/releasesPage/releasesPage';
 
 describe('Demo TestArena Tests', function () {
-	context('Demo tests', () => {
-		it('Demo login test', function () {
-			loginPage.visitPage().login();
-			cy.url().should('include', 'http://demo.testarena.pl');
-			mainPage.checkMainPageElems();
-			// NOTE: Przykłady innego wykorzystania asercji dla sprawdzenia adresu url
-			// cy.url().then((url) => {
-			//   assert.strictEqual(url, 'http://demo.testarena.pl/');
+	it('Demo login test', function () {
+		let testArenaDemoPage = 'http://demo.testarena.pl/zaloguj';
+		cy.visit(testArenaDemoPage);
+		cy.url().should('include', 'demo.testarena');
 
-			//   expect(url).to.equal('http://demo.testarena.pl/');
-			// });
-		});
+		loginPage.login();
 
-		it('Demo add test to test base', function () {
-			loginPage.visitPage().login();
-			mainPage.goToTestBase();
-			testBasePage.addTestCase(3, 1, 1).checkAddTestCase();
-		});
+		cy.url().should('include', 'http://demo.testarena.pl');
 
-		it('Demo add test to test base1', function () {
-			loginPage.visitPage().login();
-			mainPage.goToTestBase();
-			testBasePage.addTestCase(0, 0, 0)
-		});
+		cy.url().then((url) => {
+			assert.strictEqual(url, 'http://demo.testarena.pl/');
 
-		it('Demo add test to test base1', function () {
-			loginPage.visitPage().login();
-			mainPage.goToTestBase();
-			testBasePage.addTestCase(255, 5000, 1000)
+			expect(url).to.equal('http://demo.testarena.pl/');
 		});
+	});
+
+	it.only('Demo test base test', function () {
+		let testArenaDemoPage = 'http://demo.testarena.pl/zaloguj';
+		cy.visit(testArenaDemoPage);
+		cy.url().should('include', 'demo.testarena');
+
+		loginPage.login();
+		mainPage.clickTestBaseOpt();
+		testBasePage
+			.addTest(
+				'testCase',
+				testBasePage.randomString(8, 'letters'),
+				testBasePage.randomString(8, 'letters'),
+				testBasePage.randomString(8, 'letters')
+			)
+			.checkTestAddMsg();
+	});
+
+	it('Demo releases page test', function () {
+		loginPage.visitPage();
+		loginPage.login();
+		mainPage.clickTestBaseOpt('Releases');
+		releasesPage.clickTestBaseOpt();
 	});
 });

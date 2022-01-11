@@ -9,7 +9,7 @@ const osoby = [
 	['Krzysztof Kołodziejczyk']
 ];
 
-console.log(osoby[5][0]);
+
 
 // *****************************************
 
@@ -33,7 +33,7 @@ console.log(osoby[5][0]);
 
 // METODA: indexOf(elem, from)
 
-// console.log(osoby.indexOf('Jan Kowalski'))
+// console.log(osoby.indexOf('Jan Kowalski')) // 0
 
 // METODA: join(sep)
 
@@ -104,7 +104,7 @@ Tablica na której filter został wywołany
 
 // let stringArray = new Array("Blue","Humpback","Beluga")
 // let numericStringArray = new Array("80","9","700")
-// let numberArray = new Array(40,1,5,200)
+// let numberArray = new Array("Blue",40,1,5,200)
 // let mixedNumericArray = new Array("80","9","700",40,1,5,200)
 
 // function compareNumbers(a, b) {
@@ -210,7 +210,7 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 //     bar: "World"
 // }
 
-// obj.foo = "hi"
+// objectExample.foo = "hi"
 // obj["foo"] = "hi"
 
 // NOTE: Przejdź pętlą przez klucze obiektu:

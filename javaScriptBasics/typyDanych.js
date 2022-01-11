@@ -19,8 +19,8 @@
     'Krzysztof' / "Krzysztof"
 
     symbol: unikalny, niezmienny klucz 
-    const symbol1 = Symbol()
-    const symbol2 = Symbol()
+    const symbol1 = Symbol('foo')
+    const symbol2 = Symbol('foo')
     const symbol3 = Symbol('foo')
 
     number: liczby całkowite lub dziesiętne
@@ -33,6 +33,8 @@
     let lista = []
 
 */
+
+
 
 typeof null; // "object"
 typeof undefined; // "undefined"
@@ -131,7 +133,7 @@ isNaN(1 + undefined); // true
 // **********************************
 // Metoda: substr(begin, n)
 
-// console.log('Krzysztof'.substr(1, 4))
+// console.log('Krzysztof Kołodziejczyk'.substr(10, 4))
 
 // **********************************
 // Metoda: split(str)

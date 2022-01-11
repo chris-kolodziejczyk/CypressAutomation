@@ -1,3 +1,4 @@
+
 export default class BasePage {
 	constructor() {
 		this.url = '';
@@ -15,6 +16,7 @@ export default class BasePage {
 		return this;
 	}
 
+	
 	randomString(len = 10, type = 'letters') {
 		type = type && type.toLowerCase();
 		let str = '',
