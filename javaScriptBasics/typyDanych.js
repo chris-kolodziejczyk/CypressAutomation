@@ -3,9 +3,6 @@
     // NOTE: Typy prymitywne:
 
 
-    
-
-
     undefined: zmienna, która nie ma przypisanej wartości
     undefined
 

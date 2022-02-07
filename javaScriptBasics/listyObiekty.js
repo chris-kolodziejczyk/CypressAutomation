@@ -9,7 +9,7 @@ const osoby = [
 	['Krzysztof Kołodziejczyk']
 ];
 
-
+let lis = [] // Array()
 
 // *****************************************
 
@@ -85,7 +85,7 @@ Tablica na której filter został wywołany
 
 // let ages = [32, 33, 16, , 45, 40]
 
-// function checkAdult(age) {
+// function checkAdult() {
 
 //     return age >= 18
 // }
@@ -182,7 +182,7 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 
 // NOTE:Tworzenie pustego obiektu:
 
-// let obj = {}
+// let obj = {} // Object
 
 // NOTE: Inicjacja obiektu z wartościami:
 
