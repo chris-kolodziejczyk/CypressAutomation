@@ -1,3 +1,4 @@
+import cypress from 'cypress';
 import BasePage from '../basePage';
 import testBaseSelectors from './testBaseSelectors';
 
