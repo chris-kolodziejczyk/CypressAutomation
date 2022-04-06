@@ -35,6 +35,15 @@
 // Is visible
 // .should('be.visible');
 
+// Is Not Visible
+// .should('not.be.visible');
+
+// Exist in DOM
+// .should('exist');
+
+// Do not eist in DOM
+// .should('not.exist');
+
 // TDD Assertions
 
 // .isOk(object, [message])
