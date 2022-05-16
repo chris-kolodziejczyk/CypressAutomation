@@ -1,7 +1,7 @@
 {
   "animationDistanceThreshold": 5,
   "blockHosts": null,
-  "baseUrl": "http://demo.testarena.pl/zaloguj",
+  "baseUrl": "http://demo.testarena.pl",
   "browsers": [
     {
       "channel": "stable",

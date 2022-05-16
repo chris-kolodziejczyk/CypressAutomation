@@ -104,7 +104,7 @@ Tablica na której filter został wywołany
 
 // let stringArray = new Array("Blue","Humpback","Beluga")
 // let numericStringArray = new Array("80","9","700")
-// let numberArray = new Array("Blue",40,1,5,200)
+// let numberArray = new Array("Blue", 40, 1,5,200)
 // let mixedNumericArray = new Array("80","9","700",40,1,5,200)
 
 // function compareNumbers(a, b) {

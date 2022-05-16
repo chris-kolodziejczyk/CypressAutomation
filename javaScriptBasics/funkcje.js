@@ -3,6 +3,13 @@
 
 // function functionExample(x, y) { return x + y }
 
+function mojaFunkcja () {
+
+}
+
+let mojaFunkcja = () => {
+    
+}
 
 // let func1 = x => x * x
 // skrócony zapis, nie wymagany "return"
