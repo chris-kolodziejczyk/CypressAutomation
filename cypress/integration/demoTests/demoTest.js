@@ -20,24 +20,53 @@ describe('Demo TestArena Tests', function () {
 		});
 	});
 
-	it.only('Demo remember login test', function () {
+	it('Demo remember login test', function () {
 		let testArenaDemoPage = 'http://demo.testarena.pl/zaloguj';
 		cy.visit('/');
 		cy.url().should('include', 'demo.testarena');
 		cy.get(
 			'#text-2 > div > form > div.login_table > div.remember_check > label'
 		).click();
-		cy.get('#email').type('administrator@testarena.pl');
-		cy.get('#password').type('sumXQQ72$L');
-		cy.contains('Zaloguj').click();
+		loginPage.login();
 		cy.get('.icons-switch').click();
 		cy.url().should('include', '/zaloguj');
-		
 
 		cy.get('#email').then((emailElem) => {
 			cy.wrap(emailElem)
-				.should('', 'administrator@testarena.pl')
+				.should('have.text', 'administrator@testarena.pl')
 				.and('be.visible');
 		});
 	});
+
+	it('Demo login test with wrong pass', function () {
+		cy.visit('/');
+		loginPage.login('administrator@testarena.pl', '&(#^$@$@#&)$');
+		loginPage.checkWalidMsg(
+			'.login_form_error',
+			'Adres e-mail i/lub hasło są niepoprawne.'
+		);
+	});
+
+	it('assert footer', function () {
+		loginPage.visitPage().checkFooter();
+	});
+
+	it.only('Login and add test case to test base ', function () {
+		loginPage.visitPage().login('administrator@testarena.pl', 'sumXQQ72$L');
+		cy.get('#wrapper > ul > li.item5 > a').click();
+		cy.get('#content > article > nav > ul > div > a').click();
+		cy.get('.button_link_li').eq(1).click();
+		cy.get('#name').type(loginPage.randomString(10, 'letters'));
+		cy.get('#description').type(loginPage.randomString(10, 'letters'));
+		cy.get('#result').type(loginPage.randomString(10, 'letters'));
+		cy.get('#add').click();
+		cy.get('#j_info_box').should('contain.text', 'został dodany.');
+	});
 });
+
+// Dodajemy nowy test "Dodanie testu do bazy testów"
+// Logowanie, przejście do bazy testów, kliknięcie w opcję dodaj
+// Kliknięcie w "Przypadek testowy"
+// Wypełnienie formularza
+// Kliknięcie "Zapisz"
+// Weryfikacja komunikatu o dodaniu testu do bazy testów

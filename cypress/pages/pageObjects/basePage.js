@@ -1,7 +1,9 @@
 export default class BasePage {
+	
 	constructor() {
 		this.url = '';
 	}
+
 
 	visitPage(url = '/') {
 		try {

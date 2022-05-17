@@ -11,6 +11,9 @@ const osoby = [
 
 let lis = [] // Array()
 
+// Dla każdej pozycji na liście wyloguj ostatnią literę
+
+
 // *****************************************
 
 // METODA: push(elem1, elemN) / pop()
@@ -42,7 +45,9 @@ let lis = [] // Array()
 // METODA: forEach(callback)
 // osoby.forEach((value, index, arr) => {
 
-// console.log(value)
+// console.log(value.slice(1, 3))
+
+// console.log(arr)
 // })
 
 // METODA: map(callback)
@@ -186,10 +191,17 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 
 // NOTE: Inicjacja obiektu z wartościami:
 
-// let obj = {
-//     foo: '',
-//     bar: "World"
-// }
+let obj = {
+    'User 1': {
+
+		myName: 'Krzysztof',
+		myAge: [38]
+	},
+}
+
+obj["User 1"].myAge[0]
+
+
 
 // NOTE: Dostęp do właściwości obiektu:
 

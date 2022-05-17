@@ -26,9 +26,18 @@
 || - alternatywa wartości logicznych (coś "lub" coś)
 
 
+
+
+if(a > b) {
+    "$2.00"
+} 
+else {
+"$10.00"
+}
+
 // NOTE: WARUNKOWY
 
-warunek ? wartość : wartość
+warunek ?  wartość1 : wartość2
 
 let memberNumber = 2
 

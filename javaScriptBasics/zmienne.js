@@ -12,10 +12,15 @@
 // NOTE: Zmienne - przykład konstrukcji
 
 // var title = 'Gra o tron' // String
+
+
 let year = 1983 // Number
 let getYear = () => { } // Function
 const myNames = ['Krzysztof'] // Array
 const names = { nameOne:'Krzysztof' } // Object
+
+
+
 
 
 // NOTE: Przykład zachowania zmiennej var
