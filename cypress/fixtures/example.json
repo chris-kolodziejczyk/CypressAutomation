@@ -1,4 +1,17 @@
 {
+    "User1":{
+
+        "name":"",
+        "pesel":""
+    } ,
+    "User2": {
+
+
+    },
+
+
+
+
     "login": "administrator@testarena.pl",
     "pass": "sumXQQ72$L",
     "falsePass": "",

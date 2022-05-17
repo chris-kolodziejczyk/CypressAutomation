@@ -61,6 +61,12 @@ describe('Demo TestArena Tests', function () {
 		cy.get('#result').type(loginPage.randomString(10, 'letters'));
 		cy.get('#add').click();
 		cy.get('#j_info_box').should('contain.text', 'został dodany.');
+
+		// Plik Fixtury - metoda Cypress
+		// cy.fixture("example").then((objectData) => {
+
+		// 	let userName = objectData.User1.name = randomString(10, 'letters')
+		// })
 	});
 });
 
