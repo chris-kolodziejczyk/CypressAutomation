@@ -32,15 +32,13 @@ module.exports = defineConfig({
 	videoCompression: 32,
 	videoUploadOnPasses: true,
 	videosFolder: 'cypress/videos',
-	viewportHeight: 1920,
-	viewportWidth: 1080,
+	viewportHeight: 1080,
+	viewportWidth: 1920,
 	waitForAnimations: true,
 	watchForFileChanges: false,
 	e2e: {
-		setupNodeEvents(on, config) {
-			return require('./cypress/plugins')(on, config);
-		},
-		baseUrl: 'http://demo.testarena',
+		setupNodeEvents(on, config) {},
+		baseUrl: 'http://demo.testarena.pl/zaloguj',
 		excludeSpecPattern: '*.hot-update.js',
 		specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx}',
 		supportFile: './cypress/support/e2e.js',
