@@ -5,12 +5,14 @@ describe('breweries list', () => {
 
 	context('breweries list context', () => {
 		it('Log breweries list', () => {
-			cy.fixture('example').then((obj) => {
+			cy.fixture('example/example').then((obj) => {
 				cy.request({
 					url: obj.apiEndpoint,
-					method: 'GET',
+					method: 'POST',
 					headers: {},
-					body: {},
+					body: {
+						
+					},
 					redirect: true,
 					
 				}).then((res) => {

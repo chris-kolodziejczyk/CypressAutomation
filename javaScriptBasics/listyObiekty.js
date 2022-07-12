@@ -4,15 +4,12 @@ const osoby = [
 	'Jan Kowalski',
 	'Mateusz Buła',
 	'Filip Konopka',
-	'Nadzieja Kowalewicz',
-	'Adam Miałczyński',
-	['Krzysztof Kołodziejczyk']
+	[1, 2, 3, ['Krzysztof', ['lista', 2, 3]]],
 ];
 
-let lis = [] // Array()
+let lis = []; // Array()
 
 // Dla każdej pozycji na liście wyloguj ostatnią literę
-
 
 // *****************************************
 
@@ -192,16 +189,16 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 // NOTE: Inicjacja obiektu z wartościami:
 
 let obj = {
-    'User 1': {
+	Admin: 'Krzysztof Kołodziejczyk',
+	Tester: 'Marek Buła',
+};
 
-		myName: 'Krzysztof',
-		myAge: [38]
-	},
-}
+obj.User2;
+obj["User''1"];
 
-obj["User 1"].myAge[0]
+console.log(obj.User1);
 
-
+obj.user3 = 'Leopolda Bąk';
 
 // NOTE: Dostęp do właściwości obiektu:
 
@@ -269,3 +266,4 @@ obj["User 1"].myAge[0]
 // console.log(bar)
 // console.log(baz)
 // console.log(customName)
+

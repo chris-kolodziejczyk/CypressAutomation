@@ -4,7 +4,6 @@ export default class BasePage {
 		this.url = '';
 	}
 
-
 	visitPage(url = '/') {
 		try {
 			cy.visit((this.url = url))

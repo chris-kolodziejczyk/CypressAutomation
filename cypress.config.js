@@ -38,7 +38,7 @@ module.exports = defineConfig({
 	watchForFileChanges: false,
 	e2e: {
 		setupNodeEvents(on, config) {},
-		baseUrl: 'http://demo.testarena.pl/zaloguj',
+		baseUrl: 'http://demo.testarena.pl',
 		excludeSpecPattern: '*.hot-update.js',
 		specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx}',
 		supportFile: './cypress/support/e2e.js',

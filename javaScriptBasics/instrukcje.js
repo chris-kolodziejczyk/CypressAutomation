@@ -56,7 +56,7 @@
 //     pieniadze: 10000
 // }
 
-// if (czlowiek.wiek > 18 && czlowiek.pieniadze > 5000) {
+// if (czlowiek.wiek > 18 || czlowiek.pieniadze > 5000) {
 //     console.log('Mamy dla Ciebie super tani kredyt!')
 // }
 

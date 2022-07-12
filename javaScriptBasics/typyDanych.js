@@ -148,4 +148,4 @@ isNaN(1 + undefined); // true
 // **********************************
 // Metoda: inludes()
 
-// console.log('Krzyszto'.includes('f'))
+// console.log('Krzyszto'.includes('f')) // true / false

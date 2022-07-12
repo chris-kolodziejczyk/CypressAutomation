@@ -71,3 +71,9 @@ console.log("Numer wynosi " + (memberNumber === 2 ? "$2.00" : "$10.00"))
 
 // let a = 2 
 // console.log(a *= 3)
+
+
+
+// Napisz program JavaScript,
+// aby sprawdzić z dwóch podanych liczb całkowitych,
+// czy jedna jest dodatnia, a druga ujemna
