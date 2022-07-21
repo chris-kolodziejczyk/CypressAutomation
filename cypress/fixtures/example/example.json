@@ -1,15 +1,7 @@
 {
-	"trainingsTypes": {
-		"stationary-online": "0",
-		"stationary": "1",
-		"online": "2"
-	},
-	"trainings-name-index": {
-		"istqb-fl": "0"
-	},
 	"login": "administrator@testarena.pl",
 	"pass": "sumXQQ72$L",
-	"falsePass": "",
+	"falsePass": "!W)&(){}JKUhu388hio(^*",
 	"footerItemsText": [
 		"Kokpit",
 		"Regulamin",

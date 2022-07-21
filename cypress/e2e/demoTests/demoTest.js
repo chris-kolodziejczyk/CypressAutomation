@@ -1,11 +1,13 @@
 /// <reference types="cypress" />
 
-import { LoginPage } from '../../pages/pageObjects/loginPage/loginPage';
-
 describe('Demo TestArena Tests', function () {
-	it('Demo login test', function () {
-		LoginPage.visitPage(Cypress.env('url'));
-		LoginPage.login();
+	it.only('Demo login test', function () {
+		let testArenaDemoPage = 'http://demo.testarena.pl/zaloguj';
+		cy.visit(testArenaDemoPage);
+		cy.url().should('include', 'demo.testarena');
+		cy.get('#email').type('administrator@testarena.pl');
+		cy.get('#password').type('sumXQQ72$L');
+		cy.contains('Zaloguj').click();
 
 		cy.url().should('include', 'http://demo.testarena.pl');
 
@@ -14,35 +16,5 @@ describe('Demo TestArena Tests', function () {
 
 			expect(url).to.equal('http://demo.testarena.pl/');
 		});
-	});
-
-	it.only('#2 Demo login test', function () {
-		LoginPage.visitPage(Cypress.env('url'));
-		LoginPage.login('KHB%*&%&', '^&*^(*HJNKM');
-
-		cy.url().should('include', 'http://demo.testarena.pl/logowanie');
-		cy.contains(
-			'Nieprawidłowy format adresu e-mail. Wprowadź adres ponownie.'
-		).should(
-			'contain.text',
-			'Nieprawidłowy format adresu e-mail. Wprowadź adres ponownie.'
-		);
-		cy.contains(
-			'Nieprawidłowy format adresu e-mail. Wprowadź adres ponownie.'
-		).should('contain.text', 'Adres e-mail i/lub hasło są niepoprawne.');
-	});
-
-
-	it.only('#2 Demo login test', function () {
-		LoginPage.visitPage(Cypress.env('url'));
-		LoginPage.login('^%DHCSJVKLKD');
-
-		cy.url().should('include', 'http://demo.testarena.pl/logowanie');
-		cy.contains(
-			'Nieprawidłowy format adresu e-mail. Wprowadź adres ponownie.'
-		).should(
-			'contain.text',
-			'Nieprawidłowy format adresu e-mail. Wprowadź adres ponownie.'
-		);
 	});
 });
