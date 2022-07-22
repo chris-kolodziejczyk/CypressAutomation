@@ -37,7 +37,10 @@ module.exports = defineConfig({
 	waitForAnimations: true,
 	watchForFileChanges: false,
 	e2e: {
-		setupNodeEvents(on, config) {},
+		setupNodeEvents(on, config) {
+
+			
+		},
 		baseUrl: 'http://demo.testarena.pl',
 		excludeSpecPattern: '*.hot-update.js',
 		specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx}',

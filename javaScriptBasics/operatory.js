@@ -25,8 +25,11 @@
 && - koniunkcja wartości logicznych (coś "i" coś)
 || - alternatywa wartości logicznych (coś "lub" coś)
 
+let myName = 'Krzysztof'
+if (myName === 'Krzysztof' || myName === 'Kołodziejczyk'){
 
-
+    console.log(myName)
+}
 
 if(a > b) {
     "$2.00"
@@ -73,7 +76,3 @@ console.log("Numer wynosi " + (memberNumber === 2 ? "$2.00" : "$10.00"))
 // console.log(a *= 3)
 
 
-
-// Napisz program JavaScript,
-// aby sprawdzić z dwóch podanych liczb całkowitych,
-// czy jedna jest dodatnia, a druga ujemna

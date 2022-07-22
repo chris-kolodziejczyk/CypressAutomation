@@ -73,6 +73,7 @@
 //         console.log('Masz Ferrari')
 //         break
 
+// warunek alternatywny jak else
 //     default:
 //         console.log('Masz nieznany mi samochód')
 // }

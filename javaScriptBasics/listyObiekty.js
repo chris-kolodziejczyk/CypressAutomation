@@ -7,9 +7,11 @@ const osoby = [
 	[1, 2, 3, ['Krzysztof', ['lista', 2, 3]]],
 ];
 
+
 let lis = []; // Array()
 
 // Dla każdej pozycji na liście wyloguj ostatnią literę
+
 
 // *****************************************
 
@@ -190,15 +192,11 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 
 let obj = {
 	Admin: 'Krzysztof Kołodziejczyk',
-	Tester: 'Marek Buła',
+	'Tester': 'Marek Buła',
+	namesList: ['Krzysztof', 'Marek']
 };
 
-obj.User2;
-obj["User''1"];
 
-console.log(obj.User1);
-
-obj.user3 = 'Leopolda Bąk';
 
 // NOTE: Dostęp do właściwości obiektu:
 

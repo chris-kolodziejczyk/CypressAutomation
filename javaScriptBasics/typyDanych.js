@@ -41,6 +41,7 @@ null == null; // true
 isNaN(1 + null); // false
 isNaN(1 + undefined); // true
 
+
 // console.log(5 * null) // 0
 // console.log(null * 5) // 0
 // console.log("6" - 1)  // 5

@@ -8,7 +8,7 @@
     "cyrun": "cypress run",
     "cyrun-chrome": "cypress run -b chrome --headless",
     "cyrun-firefox": "cypress run -b firefox --headless",
-    "cyrun-edge": "cypress run -b edge -headless"
+    "cyrun-edge": "cypress run -b edge --headless"
   },
   "author": "Krzysztof Kolodziejczyk",
   "license": "MIT",

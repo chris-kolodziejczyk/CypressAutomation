@@ -8,19 +8,25 @@ describe('breweries list', () => {
 			cy.fixture('example/example').then((obj) => {
 				cy.request({
 					url: obj.apiEndpoint,
-					method: 'POST',
+					method: 'GET',
 					headers: {},
-					body: {
-						
-					},
+					body: {},
 					redirect: true,
-					
 				}).then((res) => {
 					if (expect(res.status).to.be.equal(200)) {
-						console.log(res.body);
+						console.log(res);
 					}
-				})
+				});
 			});
 		});
 	});
 });
+
+
+
+
+
+
+
+
+
