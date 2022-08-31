@@ -38,8 +38,7 @@ module.exports = defineConfig({
 	watchForFileChanges: false,
 	e2e: {
 		setupNodeEvents(on, config) {
-
-			
+			require('cypress-failed-log/on')(on);
 		},
 		baseUrl: 'http://demo.testarena.pl',
 		excludeSpecPattern: '*.hot-update.js',
