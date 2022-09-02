@@ -46,7 +46,7 @@ isNaN(1 + undefined); // true
 // console.log(null * 5) // 0
 // console.log("6" - 1)  // 5
 // console.log(6 - "1")  // 5
-// console.log("6" + 1)  // 61 String
+// console.log("6" + 6)  // 61 String
 // console.log(6 + "1")  // 61 String
 // console.log("three" * 2) // NaN
 // console.log(2 * "three") // NaN

@@ -8,6 +8,8 @@ const osoby = [
 ];
 
 
+osoby.forEach()
+
 let lis = []; // Array()
 
 // Dla każdej pozycji na liście wyloguj ostatnią literę
@@ -191,10 +193,15 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 // NOTE: Inicjacja obiektu z wartościami:
 
 let obj = {
-	Admin: 'Krzysztof Kołodziejczyk',
-	'Tester': 'Marek Buła',
+	Admin1: 'Krzysztof Kołodziejczyk',
+	'Tester 1': 'Marek Buła',
 	namesList: ['Krzysztof', 'Marek']
 };
+
+obj.Admin1
+
+obj['Tester 1']
+
 
 
 
