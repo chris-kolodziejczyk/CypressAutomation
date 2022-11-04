@@ -22,12 +22,38 @@ describe('Demo TestArena Tests', function () {
 		});
 	});
 
+	// BUG: Invalid url for expected result
 	it('Demo proper login test', function () {
+		loginPage.visitPage().login();
 		mainPage.logout();
+		cy.url().should('include', 'http://demo.testarena.pl/zalogu');
+	});
+
+
+
+
+
+
+	it('Demo proper login test', function () {
+		loginPage.visitPage().login('administrator@testarena.pl', 'sumXQQ72$L');
+		mainPage.logout();
+
+		// BUG: Invalid url for expected result
 		cy.url().should('include', 'http://demo.testarena.pl/zaloguj');
 	});
 
-	it.only('Demo proper login test', function () {
+
+
+
+
+
+
+
+
+
+	
+
+	it('Demo proper login test', function () {
 		mainPage.clickMenuOption();
 		testBasePage.goToTest();
 		testBasePage.fillTestForm(
