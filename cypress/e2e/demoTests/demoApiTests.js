@@ -6,7 +6,7 @@ describe('breweries list', () => {
 	context('breweries list context', () => {
 		it('Log breweries list', () => {
 			cy.fixture('example/example').then((obj) => {
-				cy.fetch({
+				cy.request({
 					url: obj.apiEndpoint,
 					method: 'GET',
 					headers: {},

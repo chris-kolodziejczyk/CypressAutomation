@@ -8,9 +8,15 @@ const osoby = [
 ];
 
 
-osoby.forEach()
+
+
+
 
 let lis = []; // Array()
+
+
+
+
 
 // Dla każdej pozycji na liście wyloguj ostatnią literę
 

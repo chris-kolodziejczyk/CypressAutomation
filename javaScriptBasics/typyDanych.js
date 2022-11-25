@@ -27,7 +27,7 @@
 
     object: zbiór właściwości
     let obiekt = {}
-    let lista = []
+    let lista = [] 
 
 */
 
@@ -40,6 +40,8 @@ null == null; // true
 !null; // true
 isNaN(1 + null); // false
 isNaN(1 + undefined); // true
+
+
 
 
 // console.log(5 * null) // 0
