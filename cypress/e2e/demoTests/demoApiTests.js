@@ -9,8 +9,6 @@ describe('breweries list', () => {
 				cy.request({
 					url: obj.apiEndpoint,
 					method: 'GET',
-					headers: {},
-					body: {},
 					redirect: true,
 				}).then((res) => {
 					if (expect(res.status).to.be.equal(200)) {
