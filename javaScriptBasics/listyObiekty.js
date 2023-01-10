@@ -4,22 +4,15 @@ const osoby = [
 	'Jan Kowalski',
 	'Mateusz Buła',
 	'Filip Konopka',
-	[1, 2, 3, ['Krzysztof', ['lista', 2, 3]]],
+	[1, 2, 3, ['Krzysztof', ['lista', 2, 3]]]
 ];
 
-
-
-
+osoby[0] = 'Krzysztof Kołodziejczyk'
 
 
 let lis = []; // Array()
 
-
-
-
-
 // Dla każdej pozycji na liście wyloguj ostatnią literę
-
 
 // *****************************************
 
@@ -39,7 +32,7 @@ let lis = []; // Array()
 
 // METODA: concat(elem1, elemN)
 
-// console.log(osoby.concat(osoby, osoby, osoby))
+// console.log(osoby.concat(osoby1, osoby2, osoby3))
 
 // METODA: indexOf(elem, from)
 
@@ -182,6 +175,8 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 // console.log(osoby)
 
 // **************************************************************************
+
+// zmienia oryginalną listę
 // METODA: splice(begin, n)
 
 // let arr = osoby.splice(1, 2)
@@ -201,15 +196,12 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 let obj = {
 	Admin1: 'Krzysztof Kołodziejczyk',
 	'Tester 1': 'Marek Buła',
-	namesList: ['Krzysztof', 'Marek']
+	namesList: ['Krzysztof', 'Marek'],
 };
 
-obj.Admin1
+obj.Admin1;
 
-obj['Tester 1']
-
-
-
+obj['Tester 1'];
 
 // NOTE: Dostęp do właściwości obiektu:
 
@@ -277,4 +269,3 @@ obj['Tester 1']
 // console.log(bar)
 // console.log(baz)
 // console.log(customName)
-

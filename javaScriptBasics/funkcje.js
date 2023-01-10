@@ -7,8 +7,9 @@ function mojaFunkcja () {
 
 }
 
-let mojaFunkcja = () => {
+let mojaFunkcja = (myName = 'Krzysztof') => {
     
+    console.log(myName)
 }
 
 // let func1 = x => x * x

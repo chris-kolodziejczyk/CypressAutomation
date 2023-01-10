@@ -7,7 +7,7 @@
 
     if (warunek) {
         instrukcja
-    } else if () {
+    } else if (warunek) {
         instrukcja
     } 
     else {
@@ -18,11 +18,13 @@
 
     // NOTE: INSTRUKCJA SWITCH
 
-    switch (wyrażenie) {
-        case wartość1: instrukcja1
-        break
-        case wartość2: instrukcja2
-        break
+    let owoc = 'Mandarynka'
+
+    switch (owoc) {
+        case 'Mandarynka': instrukcja1
+        break;
+        case 'Banan': instrukcja2
+        break;
         default: instrukcja
     }
 

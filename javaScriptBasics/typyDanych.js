@@ -27,7 +27,7 @@
 
     object: zbiór właściwości
     let obiekt = {}
-    let lista = [] 
+    let lista = [] // Array()
 
 */
 
@@ -40,9 +40,6 @@ null == null; // true
 !null; // true
 isNaN(1 + null); // false
 isNaN(1 + undefined); // true
-
-
-
 
 // console.log(5 * null) // 0
 // console.log(null * 5) // 0
@@ -69,6 +66,8 @@ isNaN(1 + undefined); // true
 // console.log(null !== undefined);    // true
 // console.log(null != 0);             // true
 // console.log(null !== 0);            // true
+
+
 
 // console.log(0 == '0');  // true
 // console.log(0 == '');   // true
@@ -131,11 +130,12 @@ isNaN(1 + undefined); // true
 // **********************************
 // Metoda: substr(begin, n)
 
-// console.log('Krzysztof Kołodziejczyk'.substr(10, 4))
+// console.log('Krzysztof Kołodziejczyk'.substr(1, 4))
 
 // **********************************
 // Metoda: split(str)
 
+// zmiana typu danych na Array
 // console.log('K,r,z,y,s z,t,o,f'.split(','))
 
 // **********************************

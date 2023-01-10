@@ -12,7 +12,10 @@ describe('breweries list', () => {
 					redirect: true,
 				}).then((res) => {
 					if (expect(res.status).to.be.equal(200)) {
-						console.log(res);
+						console.log(res.statusText);
+
+						assert.strictEqual(res.statusText, 'OK')
+
 					}
 				});
 			});
