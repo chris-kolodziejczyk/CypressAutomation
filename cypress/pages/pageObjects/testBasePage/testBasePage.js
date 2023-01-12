@@ -49,14 +49,14 @@ class TestBasePage extends BasePage {
 	checkTestOnList(testName = 'Moje testy') {
 		cy.get(testBasePageSelectors.addedTestList)
 			.children()
-			.each((element) => {
+			.each((element, ) => {
 				if (cy.wrap(element).contains(testName)) {
 					cy.wrap(element)
 						.should('exist')
 						.and('be.visible')
 						.and('include.text', testName);
 				}
-			});
+			})
 
 		return this;
 	}
