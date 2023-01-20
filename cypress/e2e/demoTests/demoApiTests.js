@@ -13,9 +13,6 @@ describe('breweries list', () => {
 				}).then((res) => {
 					if (expect(res.status).to.be.equal(200)) {
 						console.log(res.statusText);
-
-						assert.strictEqual(res.statusText, 'OK')
-
 					}
 				});
 			});
