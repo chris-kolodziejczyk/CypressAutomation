@@ -12,7 +12,8 @@ describe('breweries list', () => {
 					redirect: true,
 				}).then((res) => {
 					if (expect(res.status).to.be.equal(200)) {
-						console.log(res.statusText);
+						cy.debug()
+						console.log(res.body[0]);
 					}
 				});
 			});

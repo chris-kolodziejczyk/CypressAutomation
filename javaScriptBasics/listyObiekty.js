@@ -4,11 +4,12 @@ const osoby = [
 	'Jan Kowalski',
 	'Mateusz Buła',
 	'Filip Konopka',
-	[1, 2, 3, ['Krzysztof', ['lista', 2, 3]]]
+	[1, 2, ['Krzysztof', ['lista', 2,[3,['Mamy szkolenie']], 3]]],
 ];
 
-osoby[0] = 'Krzysztof Kołodziejczyk'
 
+
+// osoby[0] = 'Krzysztof Kołodziejczyk'
 
 let lis = []; // Array()
 
@@ -40,7 +41,7 @@ let lis = []; // Array()
 
 // METODA: join(sep)
 
-// console.log(osoby.join('-'))
+// console.log(osoby.join(''))
 
 // METODA: forEach(callback)
 // osoby.forEach((value, index, arr) => {

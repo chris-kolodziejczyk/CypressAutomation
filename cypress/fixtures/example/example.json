@@ -13,5 +13,8 @@
 		"english",
 		"polski"
 	],
-	"apiEndpoint": "https://api.openbrewerydb.org/breweries"
+	"apiEndpoint": "https://api.openbrewerydb.org/breweries",
+	"test-name": "Moje testy Krzysiek1111111",
+	"test-desc": "Jakiś opis",
+	"test-res": "Jakiś rezultat"
 }

@@ -36,7 +36,7 @@
 // .should('be.visible');
 
 // Is Not Visible
-// .should('not.be.visible');
+// .should('not.be.visible')
 
 // Exist in DOM
 // .should('exist');

@@ -45,7 +45,7 @@ isNaN(1 + undefined); // true
 // console.log(null * 5) // 0
 // console.log("6" - 1)  // 5
 // console.log(6 - "1")  // 5
-// console.log("6" + 6)  // 61 String
+// console.log("6" + 1)  // 61 String
 // console.log(6 + "1")  // 61 String
 // console.log("three" * 2) // NaN
 // console.log(2 * "three") // NaN
@@ -120,7 +120,7 @@ isNaN(1 + undefined); // true
 // Metoda: replace(str, newStr)
 
 
-// console.log('Krzysztof'.replace('Krzysztof', 'Michał'))
+// console.log('Krzysztof'.replace('z', 'y'))
 
 // **********************************
 // Metoda: slice(begin, end)
@@ -149,6 +149,6 @@ isNaN(1 + undefined); // true
 // console.log('krzysztof'.toUpperCase())
 
 // **********************************
-// Metoda: inludes()
+// Metoda: inlcudes()
 
 // console.log('Krzyszto'.includes('f')) // true / false
