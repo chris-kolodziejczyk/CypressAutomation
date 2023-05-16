@@ -1,5 +1,8 @@
-Cypress.Commands.add('readDataFromFile', (filePath, encoding) => {
-	cy.get(loginPageSelectors.email).type(email);
-	cy.get(loginPageSelectors.pass).type(pass);
-	cy.contains(loginBtnText).click();
-});
+/// <reference types="cypress" />
+
+Cypress.Commands.add(
+	'readDataFromFile',
+	(filePath = 'cypress/lib/przykładowyPlik.txt', encoding, readOptions) => {
+		cy.readFile(filePath, encoding, readOptions);
+	}
+);

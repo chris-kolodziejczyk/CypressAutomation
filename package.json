@@ -5,16 +5,16 @@
   "main": "index.js",
   "scripts": {
     "cyopen": "cypress open -b chrome --e2e",
-    "cyrun": "cypress run",
     "cyrun-chrome": "cypress run -b chrome --headless",
     "cyrun-firefox": "cypress run -b firefox --headless",
-    "cyrun-edge": "cypress run -b edge --headless"
+    "cyrun-edge": "cypress run -b edge --headless",
+    "cyrun": "set DEBUG=cypress:*&&cypress run --headed"
   },
   "author": "Krzysztof Kolodziejczyk",
   "license": "MIT",
   "dependencies": {
     "@testing-library/cypress": ">=9.0.0",
-    "cypress": ">=12.3.0",
+    "cypress": ">=12.12.0",
     "cypress-failed-log": ">=2.10.0",
     "mocha": ">=10.2.0",
     "mochawesome": ">=7.1.3",
