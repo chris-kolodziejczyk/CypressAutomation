@@ -4,9 +4,22 @@ const osoby = [
 	'Jan Kowalski',
 	'Mateusz Buła',
 	'Filip Konopka',
-	[1, 2, ['Krzysztof', ['lista', 2,[3,['Mamy szkolenie']], 3]]],
+	[1, 2, [[
+		1,6,'hgfierhgo'['Krzysztof','Szukamy']
+	], ['lista', 2,[3,['Mamy szkolenie']], 3]]],
 ];
 
+
+osoby[3][2][3][3][0]
+
+
+let url = 'http://mojastrona.pl?text=Uczę się stringów w Javascript';
+
+
+let newUrl = url.split(' ').join('-')
+
+
+osoby[osoby.indexOf('Filip Konopka')]
 
 
 // osoby[0] = 'Krzysztof Kołodziejczyk'
@@ -25,6 +38,8 @@ let lis = []; // Array()
 // console.log(osoby)
 
 // METODA: unshift(elem1, elemN) / shift()
+
+
 
 // osoby.unshift(1,2)
 // console.log(osoby.length)
@@ -197,12 +212,19 @@ jeśli zwraca wartość większą od 0 – indeks elementu a będzie większy ni
 let obj = {
 	Admin1: 'Krzysztof Kołodziejczyk',
 	'Tester 1': 'Marek Buła',
-	namesList: ['Krzysztof', 'Marek'],
+	namesList: ['Krzysztof', 'Marek',{user1: 'Krzysztof', a:[1,2,3,45,6]}],
 };
 
-obj.Admin1;
+delete obj.Admin1
 
-obj['Tester 1'];
+Object.values(obj)
+
+obj['Admin 2'] = 'Kasia Kołodziejczyk'
+
+
+obj['Admin 2']
+
+obj['Tester 1']
 
 // NOTE: Dostęp do właściwości obiektu:
 

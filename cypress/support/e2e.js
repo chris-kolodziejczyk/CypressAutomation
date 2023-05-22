@@ -2,7 +2,7 @@
 import './commands';
 require('cypress-failed-log');
 import './commands/files/readFile.js';
-
+import './commands/mainPage/mainPage.js'
 
 
 

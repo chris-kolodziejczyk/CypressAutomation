@@ -5,13 +5,13 @@
 
     if (warunek) instrukcja
 
-    if (warunek) {
+    if (new Main().logExampleText()) {
         instrukcja
-    } else if (warunek) {
+    } else if () {
         instrukcja
-    } 
+    }
     else {
-        instrukcja
+       throw Error('gererg rgerger rgehe')
     }
 
 
@@ -21,7 +21,7 @@
     let owoc = 'Mandarynka'
 
     switch (owoc) {
-        case 'Mandarynka': instrukcja1
+        case 'Mandarynka': console.log(owoc)
         break;
         case 'Banan': instrukcja2
         break;

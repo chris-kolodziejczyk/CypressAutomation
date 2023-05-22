@@ -28,4 +28,8 @@ export default class BasePage {
 		}
 		return str;
 	}
+
+	checkUrl(url) {
+		cy.url().should('include', url)
+	}
 }

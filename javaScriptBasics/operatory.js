@@ -14,6 +14,8 @@
 -- - dekrementacja
 
 
+
+
 // NOTE: LOGICZNE
 
 == - równe
