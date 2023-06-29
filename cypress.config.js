@@ -40,7 +40,7 @@ module.exports = defineConfig({
 		setupNodeEvents(on, config) {
 			require('cypress-failed-log/on')(on);
 		},
-		baseUrl: 'https://skleptest.pl/',
+		baseUrl: 'https://error.pl/',
 		excludeSpecPattern: '*.hot-update.js',
 		specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx}',
 		supportFile: './cypress/support/e2e.js',
