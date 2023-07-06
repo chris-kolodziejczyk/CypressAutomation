@@ -32,6 +32,7 @@
 */
 
 
+
 typeof null; // "object"
 typeof undefined; // "undefined"
 null === undefined; // false
@@ -118,7 +119,7 @@ isNaN(1 + undefined); // true
 // console.log('Krzysztof'.indexOf('f')) // 8
 
 // **********************************
-// Metoda: replace(str, newStr)
+// Metoda: replace(str, newStr) : repalceAll(str, newStr)
 
 
 // console.log('Krzysztof'.replace('z', 'y'))
@@ -153,3 +154,6 @@ isNaN(1 + undefined); // true
 // Metoda: inlcudes()
 
 // console.log('Krzyszto'.includes('f')) // true / false
+
+
+let text = 'Koty i psy to fajne zwierzaki'

@@ -12,6 +12,10 @@ let mojaFunkcja = (myName = 'Krzysztof') => {
     console.log(myName)
 }
 
+mojaFunkcja()
+
+
+
 // let func1 = x => x * x
 // skrócony zapis, nie wymagany "return"
 
@@ -62,4 +66,3 @@ let mojaFunkcja = (myName = 'Krzysztof') => {
 // console.log(policz('dodaj', 90, 150))
 // console.log(policz('pomnoz', 5, 10))
 // console.log(policz('podziel', 5, 10))
-

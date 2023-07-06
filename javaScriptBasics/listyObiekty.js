@@ -5,12 +5,12 @@ const osoby = [
 	'Mateusz Buła',
 	'Filip Konopka',
 	[1, 2, [[
-		1,6,'hgfierhgo'['Krzysztof','Szukamy']
-	], ['lista', 2,[3,['Mamy szkolenie']], 3]]],
+		1,6,'hgfierhgo',['Krzysztof','Szukamy']
+	], ['lista', 2,[3,['Mamy szkolenie'],['Ilość dni szkoleniowych', 2, 'Nazwa', 'Cypress dla testrów']], 3]]]
 ];
 
 
-osoby[3][2][3][3][0]
+
 
 
 let url = 'http://mojastrona.pl?text=Uczę się stringów w Javascript';

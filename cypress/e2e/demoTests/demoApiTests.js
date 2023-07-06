@@ -10,6 +10,10 @@ describe('breweries list', () => {
 					url: obj.apiEndpoint,
 					method: 'GET',
 					redirect: true,
+					headers: [],
+					body:{
+						
+					}
 				}).then((res) => {
 					if (expect(res.status).to.be.equal(200)) {
 						console.log(res.body[0]);
