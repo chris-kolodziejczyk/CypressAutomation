@@ -6,20 +6,25 @@ const osoby = [
 	'Filip Konopka',
 	[1, 2, [[
 		1,6,'hgfierhgo',['Krzysztof','Szukamy']
-	], ['lista', 2,[3,['Mamy szkolenie'],['Ilość dni szkoleniowych', 2, 'Nazwa', 'Cypress dla testrów']], 3]]]
+	], ['lista', 2,[3,['Mamy szkolenie'],['Ilość dni szkoleniowych', 2, 'Nazwa', 'Cypress dla testrów']], 3], "Tutaj"]]
 ];
 
-
-
-
-
-let url = 'http://mojastrona.pl?text=Uczę się stringów w Javascript';
-
-
-let newUrl = url.split(' ').join('-')
-
-
 osoby[osoby.indexOf('Filip Konopka')]
+
+osoby[5] = "Cypress.IO"
+
+osoby.unshift("Krzysiek")
+osoby.shift()
+
+osoby.push("Krzysiek")
+osoby.pop()
+
+
+
+
+
+
+// osoby[osoby.indexOf('Filip Konopka')]
 
 
 // osoby[0] = 'Krzysztof Kołodziejczyk'
@@ -56,7 +61,7 @@ let lis = []; // Array()
 
 // METODA: join(sep)
 
-// console.log(osoby.join(''))
+// console.log(osoby.join('-'))
 
 // METODA: forEach(callback)
 // osoby.forEach((value, index, arr) => {
@@ -214,6 +219,8 @@ let obj = {
 	'Tester 1': 'Marek Buła',
 	namesList: ['Krzysztof', 'Marek',{user1: 'Krzysztof', a:[1,2,3,45,6]}],
 };
+
+
 
 delete obj.Admin1
 

@@ -43,6 +43,7 @@ null == null; // true
 isNaN(1 + null); // false
 isNaN(1 + undefined); // true
 
+
 // console.log(5 * null) // 0
 // console.log(null * 5) // 0
 // console.log("6" - 1)  // 5
@@ -63,12 +64,11 @@ isNaN(1 + undefined); // true
 // console.log(null == 0);             // false
 // console.log(null === 0);            // false
 // console.log(false != 0);            // false
-// console.log(false !== 0);           // true
+// console.log(false != 0);           // true
 // console.log(null != undefined);     // false
 // console.log(null !== undefined);    // true
 // console.log(null != 0);             // true
 // console.log(null !== 0);            // true
-
 
 
 // console.log(0 == '0');  // true

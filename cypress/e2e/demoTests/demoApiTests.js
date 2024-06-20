@@ -7,16 +7,20 @@ describe('breweries list', () => {
 		it('Log breweries list', () => {
 			cy.fixture('example/example').then((obj) => {
 				cy.request({
-					url: obj.apiEndpoint,
-					method: 'GET',
+					url: 'https://jsonplaceholder.typicode.com/posts',
+					method: 'POST',
 					redirect: true,
-					headers: [],
+					headers: {
+						'Content-type': 'application/json; charset=UTF-8'
+					},
 					body:{
-						
+						title: 'foo',
+						body: 'bar',
+						userId: 1,
 					}
 				}).then((res) => {
-					if (expect(res.status).to.be.equal(200)) {
-						console.log(res.body[0]);
+					if (expect(res.status).to.be.equal(201)) {
+						console.log(Object.keys(res.body[0]));
 					}
 				});
 			});
