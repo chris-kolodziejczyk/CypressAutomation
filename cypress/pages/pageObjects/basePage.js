@@ -1,5 +1,4 @@
 export default class BasePage {
-	
 	constructor() {
 		this.url = '';
 	}
@@ -27,9 +26,5 @@ export default class BasePage {
 			str += String.fromCharCode((r += r > 9 ? (r < 36 ? 55 : 61) : 48));
 		}
 		return str;
-	}
-
-	checkUrl(url) {
-		cy.url().should('include', url)
 	}
 }
