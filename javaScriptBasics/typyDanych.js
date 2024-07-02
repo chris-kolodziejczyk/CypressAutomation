@@ -32,7 +32,6 @@
 */
 
 
-
 typeof null; // "object"
 typeof undefined; // "undefined"
 null === undefined; // false
@@ -123,7 +122,7 @@ isNaN(1 + undefined); // true
 
 
 // console.log('Krzysztof'.replace('z', 'y'))
-
+// replaceAll
 // **********************************
 // Metoda: slice(begin, end)
 

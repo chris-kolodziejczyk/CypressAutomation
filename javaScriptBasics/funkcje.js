@@ -19,7 +19,7 @@ mojaFunkcja()
 // let func1 = x => x * x
 // skrócony zapis, nie wymagany "return"
 
-// let func2 = (x, y) => { return x + y 
+// let func2 = (x, y) =>  return x + y 
 // Zapis blokowy, wymagany "return"
 
 

@@ -20,10 +20,6 @@ osoby.push("Krzysiek")
 osoby.pop()
 
 
-
-
-
-
 // osoby[osoby.indexOf('Filip Konopka')]
 
 

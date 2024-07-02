@@ -20,7 +20,8 @@ describe('breweries list', () => {
 					}
 				}).then((res) => {
 					if (expect(res.status).to.be.equal(201)) {
-						console.log(Object.keys(res.body[0]));
+						console.log(res.body);
+						expect(res.body.title).to.have.text('foo')
 					}
 				});
 			});
