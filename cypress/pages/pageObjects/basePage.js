@@ -3,10 +3,6 @@ export default class BasePage {
 		this.url = url;
 	}
 
-	// constructor(url = '') {
-	// 	this.url = url;
-	// }
-
 	visitPage(url = '/') {
 		try {
 			cy.visit((this.url = url))
