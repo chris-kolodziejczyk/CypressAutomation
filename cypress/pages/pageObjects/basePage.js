@@ -1,6 +1,6 @@
 export default class BasePage {
-	constructor() {
-		this.url = '';
+	constructor(url = 'http') {
+		this.url = url;
 	}
 
 	// constructor(url = '') {

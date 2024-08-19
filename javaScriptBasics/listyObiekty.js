@@ -9,7 +9,11 @@ const osoby = [
 	], ['lista', 2,[3,['Mamy szkolenie'],['Ilość dni szkoleniowych', 2, 'Nazwa', 'Cypress dla testrów']], 3], "Tutaj"]]
 ];
 
-osoby[osoby.indexOf('Filip Konopka')]
+
+
+osoby[3][1]
+
+
 
 osoby[5] = "Cypress.IO"
 
@@ -18,6 +22,14 @@ osoby.shift()
 
 osoby.push("Krzysiek")
 osoby.pop()
+
+
+delete osoby[5]
+
+
+
+
+osoby[osoby.indexOf('Filip Konopka')]
 
 
 // osoby[osoby.indexOf('Filip Konopka')]
@@ -93,6 +105,7 @@ let lis = []; // Array()
 /*
 callback
 Funkcja sprawdzająca każdy element tablicy. Funkcja powinna zwrócić true, aby zatrzymać element lub false, aby odrzucić element.
+
 
 Funkcja przyjmuje trzy argumenty:
 element

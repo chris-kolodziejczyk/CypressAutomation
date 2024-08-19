@@ -41,8 +41,9 @@ else {
 }
 
 // NOTE: WARUNKOWY
+// a =1 b = 5
 
-warunek ?  wartość1 : wartość2
+a > b ?  wartość1 : wartość2
 
 let memberNumber = 2
 
