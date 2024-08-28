@@ -26,8 +26,11 @@
     // NOTE: Typ złożony:
 
     object: zbiór właściwości
-    let obiekt = {}
-    let lista = [] // Array()
+    let obiekt = {
+        key: 1,
+        key1: 2
+    }
+    let lista = [1,2,3,4,5,6,7] // Array()
 
 */
 
@@ -56,8 +59,10 @@ isNaN(1 + undefined); // true
 // console.log(3 + false)     // 3
 // console.log(true + true)   // 2
 
+
+// !
 // console.log(false == 0);            // true
-// console.log(false === 0);           // false
+// console.log(false !== 0);           // false
 // console.log(null == undefined);     // true
 // console.log(null === undefined);    // false
 // console.log(null == 0);             // false
@@ -155,4 +160,4 @@ isNaN(1 + undefined); // true
 // console.log('Krzyszto'.includes('f')) // true / false
 
 
-let text = 'Koty i psy to fajne zwierzaki'
+// let text = 'Koty i psy to fajne zwierzaki'

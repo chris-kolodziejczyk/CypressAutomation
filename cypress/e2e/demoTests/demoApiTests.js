@@ -20,7 +20,7 @@ describe('breweries list', () => {
 					},
 				}).then((res) => {
 					if (expect(res.status).to.be.equal(201)) {
-						console.log(res.body);
+						console.log(res.body.userId);
 					}
 				});
 			});

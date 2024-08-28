@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cyopen": "cypress open -b chrome --e2e",
-    "cyrun-chrome": "cypress run -b chrome --headless",
+    "cyrun-chrome": "cypress run -b chrome --spec cypress/e2e/demoTests/demoTest.js --headless",
     "cyrun-firefox": "cypress run -b firefox --headless",
     "cyrun-edge": "cypress run -b edge --headless",
     "cyrun": "set DEBUG:*&&cypress run --headed"
