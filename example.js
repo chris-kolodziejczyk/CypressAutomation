@@ -86,12 +86,14 @@ const osoby = [
 // console.log(arr)
 // console.log(osoby)
 
-
-
 let obj = {
 	Admin1: 'Krzysztof Kołodziejczyk',
 	'Tester-1': 'Marek Buła',
-	namesList: ['Krzysztof', 'Marek',{user1: 'Krzysztof', a:[1,2,3,45,6]}]
+	namesList: [
+		'Krzysztof',
+		'Marek',
+		{ user1: 'Krzysztof', a: [1, 2, 3, 45, 6] },
+	],
 };
 
 // delete obj.Admin1
@@ -100,12 +102,9 @@ let obj = {
 
 // obj['Tester-1'] = 'Marek B'
 
-
 // console.log(Object.keys(obj))
 
 // console.log(Object.values(obj))
-
-
 
 // Dodaj zmienną której wartością będzie obiekt zawierający 3 książki
 // każdy klucz książki powinien mieć wartość nowego obiektu
@@ -114,7 +113,6 @@ let obj = {
 // autor: ['Mickiewicz']
 
 // Wyloguj w konsoli informacje dla jednej wybranej książki bez nawiasów
-
 
 let library = {
 	book1: {
@@ -126,32 +124,66 @@ let library = {
 		Tytuł: ['Pan z balkonika'],
 		'Ilość stron': [345],
 		Autor: ['Obcy'],
-		Regał: 3
+		Regał: 3,
 	},
 	book3: {
 		Tytuł: ['Czarny kot'],
 		'Ilość stron': [125],
 		Autor: ['E.A.POE'],
-		getTitle: function() {
-			return this.Tytuł
+		getTitle: function () {
+			return this.Tytuł;
 		},
 		Regał: 4,
-		'Ilość na stanie': "Ilość = 3",
-		ID:[465454646,654654654654654,6545646545]
+		'Ilość na stanie': 'Ilość = 3',
+		ID: [465454646, 654654654654654, 6545646545],
 	},
 };
 
-
 // console.log('Tytuł: ' + library.book1.Tytuł[0] + '\n' + 'Ilość stron: ' +  library.book1['Ilość stron'][0] + '\n' + 'Autor: ' +  library.book1.Autor[0])
 
-console.log(`Tytuł: ${library.book1.Tytuł[0]}
-Ilość stron: ${library.book1['Ilość stron'][0]}
-Autor: ${library.book1.Autor[0]}`)
-
-
-
+// console.log(`Tytuł: ${library.book1.Tytuł[0]}
+// Ilość stron: ${library.book1['Ilość stron'][0]}
+// Autor: ${library.book1.Autor[0]}`);
 
 let list = [
 	['Marek Buła', [53453453, 4353453453], '54664645664645', '6464645656'],
-	['Krzysztof Kołodziejczyk', '12345353534', 44535345342, 535535553]
-]
+	['Krzysztof Kołodziejczyk', '12345353534', 44535345342, 535535553],
+];
+
+//////////////////////////////////////////////////////////////////////
+
+const { XMLParser, XMLBuilder, XMLValidator } = require('fast-xml-parser');
+
+
+
+const fs = require('fs');
+
+
+
+
+
+
+
+
+const xmlFile = fs.readFileSync(`${process.cwd()}/books.xml`, 'utf8');
+const parser = new XMLParser();
+const json = parser.parse(xmlFile);
+
+console.log(`First book: `, json.catalog.book[0]);
+
+// assert.strictEqual(json.catalog.book[0], {'First book':  {
+//   author: 'Gambardella, Matthew',
+//   title: "XML Developer's Guide",
+//   genre: 'Computer',
+//   price: 44.95,
+//   publish_date: '2000-10-01',
+//   description: 'An in-depth look at creating applications \n      with XML.'
+// }}
+// )
+
+json.catalog.book[0] = {
+	author: 'Agnieszka G.'
+}
+
+
+fs.writeFileSync('./cypress/newXmlFile.xml', xmlFile, 'utf8')

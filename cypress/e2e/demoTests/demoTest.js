@@ -42,14 +42,19 @@ describe('Demo TestArena Tests', function () {
 
 			cy.url().should('include', 'http://demo.testarena.pl');
 			cy.get('.front-log').should('be.visible');
+
+			
 		});
 
-		it.only('Create new test', function () {
-			loginPage
-				.visitPage()
-				.login()
-			mainPage
-				.goToTestBase();
+		it('Create new test', function () {
+			loginPage.visitPage('').login();
+			mainPage.goToTestBase();
+			// mainPage.checkMyTasks()
+
+			cy.get(
+				'#chart_div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > svg:nth-child(1)'
+			).should('be.visible');
+
 			testBasePage
 				.addTestToTestBase(
 					1,
@@ -59,7 +64,31 @@ describe('Demo TestArena Tests', function () {
 					testBasePage.randomString(50)
 				)
 				.checkAddedTest();
-			cy.logInfo('Zakończenie testu')
+			cy.logInfo('Zakończenie testu');
+		});
+	});
+});
+
+describe('Test strony edu.ittraining.pl', () => {
+	it('Sprawdzenie funkcjonalności strony', () => {
+		mainPage.visitPage('https://edu.ittraining.pl');
+
+		// Kliknięcie w link  ISTQB Zaawansowany
+		mainPage.goToEduTrainings('producOwner')
+
+		// Sprawdzenie, czy wyświetla się dolna część strony
+		cy.get('#wrapper > footer').should('be.visible');
+
+		// Sprawdzenie, czy wyświetla się element #opinion_box
+		cy.get('#opinion_box').should('be.visible');
+
+		// Sprawdzenie, czy wyświetla się element przycisku subskrypcji
+		cy.get('#j_restoreSubscriptionFormButton').then(($button) => {
+			if ($button.length > 0) {
+				cy.log('Element Subskrybcji się wyświetla');
+			} else {
+				cy.log('Element Subskrybcji nie został znaleziony');
+			}
 		});
 	});
 });

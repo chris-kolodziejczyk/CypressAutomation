@@ -34,7 +34,6 @@
 
 */
 
-
 typeof null; // "object"
 typeof undefined; // "undefined"
 null === undefined; // false
@@ -44,7 +43,6 @@ null == null; // true
 !null; // true
 isNaN(1 + null); // false
 isNaN(1 + undefined); // true
-
 
 // console.log(5 * null) // 0
 // console.log(null * 5) // 0
@@ -59,7 +57,6 @@ isNaN(1 + undefined); // true
 // console.log(3 + false)     // 3
 // console.log(true + true)   // 2
 
-
 // !
 // console.log(false == 0);            // true
 // console.log(false !== 0);           // false
@@ -73,7 +70,6 @@ isNaN(1 + undefined); // true
 // console.log(null !== undefined);    // true
 // console.log(null != 0);             // true
 // console.log(null !== 0);            // true
-
 
 // console.log(0 == '0');  // true
 // console.log(0 == '');   // true
@@ -125,7 +121,6 @@ isNaN(1 + undefined); // true
 // **********************************
 // Metoda: replace(str, newStr) : repalceAll(str, newStr)
 
-
 // console.log('Krzysztof'.replace('z', 'y'))
 // replaceAll
 // **********************************
@@ -158,6 +153,5 @@ isNaN(1 + undefined); // true
 // Metoda: inlcudes()
 
 // console.log('Krzyszto'.includes('f')) // true / false
-
 
 // let text = 'Koty i psy to fajne zwierzaki'
