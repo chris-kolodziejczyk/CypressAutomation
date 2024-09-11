@@ -154,22 +154,17 @@ let list = [
 
 const { XMLParser, XMLBuilder, XMLValidator } = require('fast-xml-parser');
 
-
-
 const fs = require('fs');
 
-
-
-
-
-
-
-
+// Wczytanie i zbudowanie obiektu JavaScript z pliku XML
 const xmlFile = fs.readFileSync(`${process.cwd()}/books.xml`, 'utf8');
 const parser = new XMLParser();
+const builder = new XMLBuilder();
 const json = parser.parse(xmlFile);
 
 console.log(`First book: `, json.catalog.book[0]);
+
+// Weryfikacja elementów z pliku XML
 
 // assert.strictEqual(json.catalog.book[0], {'First book':  {
 //   author: 'Gambardella, Matthew',
@@ -181,9 +176,11 @@ console.log(`First book: `, json.catalog.book[0]);
 // }}
 // )
 
+// Edycja danych zawartych w pliku po przekształceniu w obiekt JavaScript
 json.catalog.book[0] = {
-	author: 'Agnieszka G.'
-}
+	author: 'Agnieszka G.',
+};
 
-
-fs.writeFileSync('./cypress/newXmlFile.xml', xmlFile, 'utf8')
+// Zbudowanie i zapis pliku xml z obiektu JavaScript / JSON
+const output = builder.build(json);
+fs.writeFileSync('./cypress/newXmlFile.xml', output, 'utf8');
